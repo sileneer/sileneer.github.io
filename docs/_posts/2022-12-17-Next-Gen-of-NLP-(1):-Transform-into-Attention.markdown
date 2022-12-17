@@ -1,6 +1,3 @@
-# Next Gen of NLP: Transform into Attention (1)
-
-
 
 *Transformer is first introduced in the paper "Attention Is All You Need" by Google at 31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA [1]. The paper is published on https://arxiv.org/pdf/1706.03762.pdf. This article is based on the original paper.*
 
