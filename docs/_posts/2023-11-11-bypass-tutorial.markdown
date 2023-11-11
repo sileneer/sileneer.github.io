@@ -112,7 +112,7 @@ From SKY VPN: 域名被墙给污染了，国内可以使用 yun.skyvpn.one 进�
    点击左边 General —— 点击 System proxy （可以设置开机自启：点击 Start with Windows）
    ![Alt text](/assets/image-2.png)
 6. 点击Proxies，再点Proxy
-   ![Alt text](/assets/image-3.png)
+   ![Alt text](../../assets/image-3.png)
 7. 点击⚡检测延迟
    ![Alt text](/assets/image-4.png)
 8. 选择一个延迟低的节点，点击确定
