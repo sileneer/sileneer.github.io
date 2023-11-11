@@ -103,27 +103,27 @@ From SKY VPN: 域名被墙给污染了，国内可以使用 yun.skyvpn.one 进�
    3. Other versions: https://archive.org/download/clash_for_windows_pkg
 2. 安装 Clash for Windows
 3. 在机场购买套餐，获取订阅链接
-   ![Alt text](image-1.png)
+   ![Alt text](/assets/image-1.png)
 4. 添加订阅：
    1. 如果是使用订阅链接：粘贴订阅链接——然后点击download——提示 Success 
-   ![Alt text](image.png)
+   ![Alt text](/assets/image.png)
     2. 或者点击机场添加链接的地方，一键导入订阅链接
 5. 设置系统代理
    点击左边 General —— 点击 System proxy （可以设置开机自启：点击 Start with Windows）
-   ![Alt text](image-2.png)
+   ![Alt text](/assets/image-2.png)
 6. 点击Proxies，再点Proxy
-   ![Alt text](image-3.png)
+   ![Alt text](/assets/image-3.png)
 7. 点击⚡检测延迟
-   ![Alt text](image-4.png)
+   ![Alt text](/assets/image-4.png)
 8. 选择一个延迟低的节点，点击确定
-   ![Alt text](image-5.png)
+   ![Alt text](/assets/image-5.png)
    
 注意事项：
 1. 所示按钮为更新托管地址
-   ![Alt text](image-6.png)
+   ![Alt text](/assets/image-6.png)
 2. 如果是使用订阅链接的可以设置自动定时更新订阅（可选）：点击 Profiles -- 点击 change information 按钮 - 随便输入名称 - 输入定时更新的时间（小时整数，24就挺好）
-   ![Alt text](image-8.png)
-   ![Alt text](image-7.png)
+   ![Alt text](/assets/image-8.png)
+   ![Alt text](/assets/image-7.png)
 
 ### macOS
 
@@ -135,7 +135,7 @@ From SKY VPN: 域名被墙给污染了，国内可以使用 yun.skyvpn.one 进�
 
 参考安装视频：
 
-<video src="Screen%20Recording%202023-09-16%20at%207.26.59%E2%80%AFPM.mp4" controls title="Title"></video>
+<video src="/assets/Screen%20Recording%202023-09-16%20at%207.26.59%E2%80%AFPM.mp4" controls title="Title"></video>
 
 ### Android / HarmonyOS
 
