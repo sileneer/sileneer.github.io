@@ -13,6 +13,8 @@ Table of content:
   - [如何使用](#如何使用)
 - [机场推荐](#机场推荐)
   - [省流：我的推荐](#省流我的推荐)
+    - [SKY VPN](#sky-vpn)
+    - [OuO Network](#ouo-network)
   - [机场比较](#机场比较)
 - [配置](#配置)
   - [Windows](#windows)
@@ -64,6 +66,8 @@ Clash 客户端是用来配置代理规则的，它可以通过订阅链接来�
 
 ### 省流：我的推荐
 
+#### SKY VPN
+
 我正在使用的是 [SKY VPN](https://skyvpn.one)，这个机场的套餐主要有以下几个，速度和稳定度都还行，算是我能找到便宜有好用的机场了。
 
 From SKY VPN: 域名被墙给污染了，国内可以使用 yun.skyvpn.one 进行访问，订阅链接可以重新复制或者将sub2.skyvpn.one替换成sub3.skyvpn.one
@@ -78,6 +82,10 @@ From SKY VPN: 域名被墙给污染了，国内可以使用 yun.skyvpn.one 进�
 | 200G | 30天 | ￥4/月 | 100Mbps | 2 |
 | 200G | 30天 | ￥6/月 | unlimited | 2 | ✅ |
 | 1000G | 30天 | ￥8/月 | unlimited | 6 |
+
+#### OuO Network
+
+Referal code: DUANG114514
 
 ### 机场比较
 
@@ -135,7 +143,7 @@ From SKY VPN: 域名被墙给污染了，国内可以使用 yun.skyvpn.one 进�
 
 参考安装视频：
 
-<video src="/assets/Screen%20Recording%202023-09-16%20at%207.26.59%E2%80%AFPM.mp4" controls title="Title"></video>
+
 
 ### Android / HarmonyOS
 
