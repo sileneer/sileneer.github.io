@@ -7,7 +7,7 @@ categories: Network
 
 
 Table of content:
-- [Before continuing... Please read](#before-continuing-please-read)
+- [Before continuing...](#before-continuing)
 - [原理](#原理)
   - [一些名词](#一些名词)
   - [如何使用](#如何使用)
@@ -26,21 +26,19 @@ Table of content:
   - [Linux](#linux)
   - [Router](#router)
 
-## Before continuing... Please read
+## Before continuing... 
 
 <span style="color:red;font-weight:700;font-size:28px">
-DO NOT SHARE THE PAGE WITHOUT CONSENT
+DO NOT SHARE THE PAGE ONLINE
 </span>
 
-The contents and resources on this website are for learning purposes ONLY. Please follow the laws and regulations of the country and region you are in now. 
+Please follow the laws and regulations of the country and region you are in now. DO NOT use the contents and resources for illegal or immoral purposes. 
 
-DO NOT use the contents and resources for illegal or immoral purposes. 
-
-Resale of any resources is NOT allowed.
+DO NOT resale.
 
 A useful website with detailed explanations: [honven](https://sites.google.com/view/honven/%E9%A6%96%E9%A1%B5)
 
-<ins>If you to conduct interviews or important activities, it is highly recommended to use your own roaming data, either by roaming plan on your foreign SIM card, or by roaming plan from an eSIM provider (if you are using iPhone or Android phone supported eSIM).</ins>
+<ins>If you are to conduct interviews or important activities, it is highly recommended to use your own roaming data or eSIM plans (on iPhone or Android phone with eSIM supported).</ins>
 
 ## 原理
 
@@ -85,6 +83,8 @@ From SKY VPN: 域名被墙给污染了，国内可以使用 yun.skyvpn.one 进�
 
 #### OuO Network
 
+（我没怎么用过这个机场，但是听说挺快挺稳的。下面这个code可以享受6块钱一个月100G的优惠，还是挺划算的，可以试一试）
+
 Referal code: DUANG114514
 
 ### 机场比较
@@ -96,6 +96,16 @@ Referal code: DUANG114514
 ### Windows
 
 #### Clash for Windows
+
+> Updated on 16 Nov 2023:
+>
+> 为了防止 clash repo 再出什么问题，我 fork 了一下 clash-rev repo: https://github.com/sileneer/clash-rev
+>
+> （会不定时的同步一下上游的仓库）
+
+> Updated on 15 Nov 2023:
+>
+> clash-rev 已接盘原 clash repo: https://github.com/MerlinKodo/clash-rev
 
 > Updated on 02 Nov 2023: 
 > 
@@ -143,16 +153,21 @@ Referal code: DUANG114514
 
 参考安装视频：
 
+Click the image before to watch the video.
 
+[![Setup macOS](https://img.youtube.com/vi/zTLOdZh6g08/0.jpg)](https://youtu.be/zTLOdZh6g08 "Setup macOS")
 
 ### Android / HarmonyOS
 
+
 ### iOS
+
+
 
 ### Linux
 
 ### Router
 
-[小米 AX1800 安装 ShellClash](https://zhuanlan.zhihu.com/p/458905777)
-
-[Github: juewuy/ShellCrash](https://github.com/juewuy/ShellCrash/releases)
+参考：
+1. [小米 AX1800 安装 ShellClash](https://zhuanlan.zhihu.com/p/458905777)
+2. [Github: juewuy/ShellCrash](https://github.com/juewuy/ShellCrash/releases)
