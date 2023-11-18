@@ -151,11 +151,13 @@ Referal code: DUANG114514
 
 下载地址：
 
+Download from [gh-pages -> assets/Clash.img](https://github.com/sileneer/sileneer.github.io/blob/gh-pages/assets/ClashX.dmg)
+
 参考安装视频：
 
 Click the image before to watch the video.
 
-[![Setup macOS](https://img.youtube.com/vi/zTLOdZh6g08/0.jpg)](https://youtu.be/zTLOdZh6g08 "Setup macOS")
+<video src="../assets/macOS.mp4" controls title="Title"></video>
 
 ### Android / HarmonyOS
 
