@@ -76,6 +76,8 @@ Clash 客户端是用来配置代理规则的，它可以通过订阅链接来�
 
 #### OuO Network
 
+[OuO Network](https://ouonetwork.b-cdn.net)
+
 （我没怎么用过这个机场，但是听说挺快挺稳的。下面这个code可以享受6块钱一个月100G的优惠，还是挺划算的，可以试一试）
 
 Referal code: DUANG114514
@@ -105,10 +107,6 @@ Download from [release](https://github.com/wonfen/clash-verge-rev/releases). Sup
 ### Windows: Clash for Windows
 
 **Please go to [Troubleshot](#troubleshot) if you encounter any problems.**
-
-> Updated on 26 Nov 2023:
->
-> 为了防止 clash repo 再出什么问题，我 fork 了一下 [sileneer/clash-verge-rev](https://github.com/sileneer/clash-verge-rev)
 
 1. 下载 Clash for Windows：
    1. x64: [https://archive.org/download/clash_for_windows_pkg/Clash.for.Windows.Setup.0.20.39.arm64.exe](https://archive.org/download/clash_for_windows_pkg/Clash.for.Windows.Setup.0.20.39.arm64.exe)
@@ -185,11 +183,38 @@ Download from [gh-pages -> assets/Clash.img](https://github.com/sileneer/silenee
 
 ### Android / HarmonyOS
 
-
+Download the apk from [release](
 
 ### iOS
 
+1. 下载 Shadowrocket. 注意，要切换到非国区的 Apple ID 才能下载 Shadowrocket. 美区价格是2.99美元。
+
+2. 点击软件主界面左上角 ➕ 按钮，在弹出窗口进入添加节点界面，类型选择 `Shadowsocks` 后，出现 `Shadowsocks` 配置界面。
+   
+   ![Alt text](/assets/image-12.png)
+
+如果你不想付费购买，可以使用共享账号。
+
+**<span style="color:red;">注意，登录时选择-其他选项，不要开启双重验证</span>**
+
+**<span style="color:red;">千万别拿别人的苹果账号登录iCloud，只登录应用商店Apple Store这个软件，进去apple store,点击右上角-拉到最后-退出登录</span>**
+
+**<span style="color:red;font-size:30px;">禁止设置中登录<br>禁止登录iCloud<br>未按要求操作所产生的一切后果自负</span>**
+
+1. 打开设备上的 App Store，点击右上角的头像按钮，然后在弹出的界面中滑动到最底部，点击 "登出" 以退出当前帐号。
+
+2. 选择下方的账号登录 App Store。在弹出的 Apple ID 安全界面中点击 "其他选项 -> 不升级"，切勿开启双重认证！
+
+3. 登录后在 App Store 搜索关键词「Shadowrocket」并下载。下载完成后立即「退出账号」，以避免各类问题。
+
+4. 共享账号地址：https://appleid.zijieyunti.com/share/pDzoeuTjqK
+
+![Alt text](/assets/image-10.png)
+![Alt text](/assets/image-11.png)
+
 ### Router
+
+[OpenClash](https://github.com/vernesong/OpenClash)
 
 参考：
 1. [小米 AX1800 安装 ShellClash](https://zhuanlan.zhihu.com/p/458905777)
@@ -216,3 +241,5 @@ xattr -d com.apple.quarantine /Applications/Clash\ Verge.app
 ```
 
 Replace the `/Applications/Clash\ Verge.app` with the path of your Clash Verge app, if necessary
+
+`sudo` if required.
