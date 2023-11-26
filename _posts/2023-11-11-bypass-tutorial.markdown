@@ -106,6 +106,8 @@ If the above links are not working, download the [release](https://github.com/si
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/C_q8Cv0A_cc?si=amLxFRkkwWEVD2Pl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+
+
 ### Windows: Clash for Windows
 
 **Please go to [Troubleshot](#troubleshot) if you encounter any problems.**
@@ -127,11 +129,7 @@ If the above links are not working, download the [release](https://github.com/si
 
 4. 添加订阅：
    1. 如果是使用订阅链接：粘贴订阅链接——然后点击download——提示 Success 
-
-
    ![Alt text](/assets/image.png)
-
-
     2. 或者点击机场添加链接的地方，一键导入订阅链接
 
 
