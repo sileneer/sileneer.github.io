@@ -6,7 +6,7 @@ categories: Network
 ---
 
 
-Table of content:
+**Table of content:**
 - [Before continuing...](#before-continuing)
 - [原理](#原理)
   - [一些名词](#一些名词)
@@ -16,7 +16,7 @@ Table of content:
     - [SKY VPN](#sky-vpn)
     - [OuO Network](#ouo-network)
   - [机场比较](#机场比较)
-- [配置](#配置)
+- [安装与配置](#安装与配置)
   - [\[Recommended\] Clash Verge (For Linux, macOS and Windows)](#recommended-clash-verge-for-linux-macos-and-windows)
   - [Windows: Clash for Windows](#windows-clash-for-windows)
   - [macOS: ClashX](#macos-clashx)
@@ -37,11 +37,11 @@ Please follow the laws and regulations of the country and region you are in now.
 
 ### 一些名词
 
-> 机场：机场指的是一些提供代理服务的网站，用户可以通过购买套餐来使用代理服务。机场的代理服务一般是通过 Shadowsocks、V2Ray 等协议实现的，这些协议都是基于 SOCKS5 协议的，所以机场的代理服务一般都是 SOCKS5 代理。
+> 机场：机场指的是一些提供代理服务的网站，用户可以通过购买套餐来使用代理服务。
 
-> Clash, v2ray: 跨平台的基于规则的代理工具, 在网络和应用层运行, 支持各种代理。
+> Clash, v2ray: 跨平台的基于规则的代理工具
 
-> Clash for Windows: Clash for Windows 是基于 Clash 的一个 GUI 客户端，可以通过图形界面来配置代理规则，从而实现代理分流。
+> Clash for Windows / Clash Verge: Clash for Windows 是基于 Clash 的一个 GUI 客户端，可以通过图形界面来配置代理规则
 
 ### 如何使用
 
@@ -84,7 +84,7 @@ Referal code: DUANG114514
 
 关于其他的机场，这个网站上有详细的机场比较：[付费机场推荐/SSR-v2ray专线机场评测（2023.11.7更新）](https://sites.google.com/view/honven/%E9%A6%96%E9%A1%B5/%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90)，但是我的建议是，这种机场长期来看都不是太稳定，不要给机场充太多钱，一般来说，一个月的套餐就够了。
 
-## 配置
+## 安装与配置
 
 ### [Recommended] Clash Verge (For Linux, macOS and Windows)
 
@@ -110,43 +110,66 @@ Download from [release](https://github.com/wonfen/clash-verge-rev/releases). Sup
 >
 > 为了防止 clash repo 再出什么问题，我 fork 了一下 [sileneer/clash-verge-rev](https://github.com/sileneer/clash-verge-rev)
 
-> Updated on 26 Nov 2023:
->
-> [clash-verge-rev](https://github.com/sileneer/clash-verge-rev) 已接盘原 clash verge repo
-
-> Updated on 02 Nov 2023: 
-> 
-> Clash for Windows 删除其 Github 仓库托管的 Release 包，开发者表示停止更新
-> 
-> Clash for Windows 是一个使用 Go 语言编写，基于规则的跨平台代理软件，目前支持的平台有 Windows、Linux、MacOS。
-> 
-> 几分钟前，开发者 Fndroid 删除了该仓库托管的 Releases 包，由于 Clash for Windows 并不开源，所以该 Github 仓库为其应用分发所用。开发者在其官方 Telegram 频道表示：停止更新了，江湖再见吧😅
-
 1. 下载 Clash for Windows：
-   1. x64: https://archive.org/download/clash_for_windows_pkg/Clash.for.Windows.Setup.0.20.39.arm64.exe
-   2. x86: https://archive.org/download/clash_for_windows_pkg/Clash.for.Windows.Setup.0.20.39.ia32.exe
-   3. Other versions: https://archive.org/download/clash_for_windows_pkg
+   1. x64: [https://archive.org/download/clash_for_windows_pkg/Clash.for.Windows.Setup.0.20.39.arm64.exe](https://archive.org/download/clash_for_windows_pkg/Clash.for.Windows.Setup.0.20.39.arm64.exe)
+   2. x86: [https://archive.org/download/clash_for_windows_pkg/Clash.for.Windows.Setup.0.20.39.ia32.exe](https://archive.org/download/clash_for_windows_pkg/Clash.for.Windows.Setup.0.20.39.ia32.exe)
+   3. Other versions: [https://archive.org/download/clash_for_windows_pkg](https://archive.org/download/clash_for_windows_pkg)
+
+
 2. 安装 Clash for Windows
+
+
 3. 在机场购买套餐，获取订阅链接
+
+
    ![Alt text](/assets/image-1.png)
+
+
 4. 添加订阅：
    1. 如果是使用订阅链接：粘贴订阅链接——然后点击download——提示 Success 
+
+
    ![Alt text](/assets/image.png)
+
+
     2. 或者点击机场添加链接的地方，一键导入订阅链接
+
+
 5. 设置系统代理
    点击左边 General —— 点击 System proxy （可以设置开机自启：点击 Start with Windows）
+
+
    ![Alt text](/assets/image-2.png)
+
+
 6. 点击Proxies，再点Proxy
+
+
    ![Alt text](/assets/image-3.png)
+
+
 7. 点击⚡检测延迟
+
+
    ![Alt text](/assets/image-4.png)
+
+
 8. 选择一个延迟低的节点，点击确定
+
+
    ![Alt text](/assets/image-5.png)
-   
+
+
 注意事项：
 1. 所示按钮为更新托管地址
+
+
    ![Alt text](/assets/image-6.png)
+
+
 2. 如果是使用订阅链接的可以设置自动定时更新订阅（可选）：点击 Profiles -- 点击 change information 按钮 - 随便输入名称 - 输入定时更新的时间（小时整数，24就挺好）
+
+
    ![Alt text](/assets/image-8.png)
    ![Alt text](/assets/image-7.png)
 
@@ -164,7 +187,6 @@ Download from [gh-pages -> assets/Clash.img](https://github.com/sileneer/silenee
 
 
 
-
 ### iOS
 
 ### Router
@@ -179,7 +201,7 @@ Download from [gh-pages -> assets/Clash.img](https://github.com/sileneer/silenee
 
 1. 如果重启电脑后发现连不上网，记得去设置里看一下是不是上次代理忘记关了，重置一下代理设置。
 
-2. If you could not start the app on Windows, please check that you have [Webview2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section) installed.
+2. If you could not start the app on Windows when you are installing Clash Verge, please check that you have [Webview2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section) installed.
 
 ### macOS
 
@@ -193,4 +215,4 @@ Please run the following command in the terminal:
 xattr -d com.apple.quarantine /Applications/Clash\ Verge.app
 ```
 
-Replace the `/Applications/Clash\ Verge.app` with the path of your Clash Verge app
+Replace the `/Applications/Clash\ Verge.app` with the path of your Clash Verge app, if necessary
