@@ -167,7 +167,7 @@ Notes: If you could not start the app on Windows, please check that you have [We
 
 Notes：If you encounter the following on macOS:
 
-![Alt text](../assets/image-9.png)
+![Alt text](/assets/image-9.png)
 
 Please run the following command in the terminal:
 
