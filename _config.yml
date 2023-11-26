@@ -30,9 +30,11 @@ twitter_username: lzh7522
 github_username:  sileneer
 
 # Build settings
-theme: minimal-mistakes-jekyll
+# theme: minima
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.
