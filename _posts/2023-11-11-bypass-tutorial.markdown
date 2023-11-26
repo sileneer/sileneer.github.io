@@ -12,15 +12,17 @@ Table of content:
   - [一些名词](#一些名词)
   - [如何使用](#如何使用)
 - [机场推荐](#机场推荐)
-  - [省流：我的推荐](#省流我的推荐)
+  - [省流](#省流)
     - [SKY VPN](#sky-vpn)
     - [OuO Network](#ouo-network)
   - [机场比较](#机场比较)
 - [配置](#配置)
   - [Windows](#windows)
     - [Clash for Windows](#clash-for-windows)
+    - [Troubleshot](#troubleshot)
   - [macOS](#macos)
   - [ClashX](#clashx)
+  - [Clash Verge (For both macOS and Windows)](#clash-verge-for-both-macos-and-windows)
   - [Android / HarmonyOS](#android--harmonyos)
   - [iOS](#ios)
   - [Linux](#linux)
@@ -28,15 +30,7 @@ Table of content:
 
 ## Before continuing... 
 
-<span style="color:red;font-weight:700;font-size:28px">
-DO NOT SHARE THE PAGE ONLINE
-</span>
-
 Please follow the laws and regulations of the country and region you are in now. DO NOT use the contents and resources for illegal or immoral purposes. 
-
-DO NOT resale.
-
-A useful website with detailed explanations: [honven](https://sites.google.com/view/honven/%E9%A6%96%E9%A1%B5)
 
 <ins>If you are to conduct interviews or important activities, it is highly recommended to use your own roaming data or eSIM plans (on iPhone or Android phone with eSIM supported).</ins>
 
@@ -62,13 +56,13 @@ Clash 客户端是用来配置代理规则的，它可以通过订阅链接来�
 
 ## 机场推荐
 
-### 省流：我的推荐
+### 省流
 
 #### SKY VPN
 
 我正在使用的是 [SKY VPN](https://skyvpn.one)，这个机场的套餐主要有以下几个，速度和稳定度都还行，算是我能找到便宜有好用的机场了。
 
-From SKY VPN: 域名被墙给污染了，国内可以使用 yun.skyvpn.one 进行访问，订阅链接可以重新复制或者将sub2.skyvpn.one替换成sub3.skyvpn.one
+> From SKY VPN: 域名被墙给污染了，国内可以使用 yun.skyvpn.one 进行访问，订阅链接可以重新复制或者将sub2.skyvpn.one替换成sub3.skyvpn.one
 
 ⚠️ 网速换算：1Mbps = 0.125MB/s, 1MB/s = 8Mbps
 
@@ -89,7 +83,7 @@ Referal code: DUANG114514
 
 ### 机场比较
 
-如果你吃了很空，或者 SKY VPN 用不了了，这个网站上有详细的机场比较：[付费机场推荐/SSR-v2ray专线机场评测（2023.11.7更新）](https://sites.google.com/view/honven/%E9%A6%96%E9%A1%B5/%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90)，但是我的建议是，这种机场长期来看都不是太稳定，不要给机场充太多钱，一般来说，一个月的套餐就够了。
+关于其他的机场，这个网站上有详细的机场比较：[付费机场推荐/SSR-v2ray专线机场评测（2023.11.7更新）](https://sites.google.com/view/honven/%E9%A6%96%E9%A1%B5/%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90)，但是我的建议是，这种机场长期来看都不是太稳定，不要给机场充太多钱，一般来说，一个月的套餐就够了。
 
 ## 配置
 
@@ -97,15 +91,13 @@ Referal code: DUANG114514
 
 #### Clash for Windows
 
-> Updated on 16 Nov 2023:
+> Updated on 26 Nov 2023:
 >
-> 为了防止 clash repo 再出什么问题，我 fork 了一下 clash-rev repo: https://github.com/sileneer/clash-rev
->
-> （会不定时的同步一下上游的仓库）
+> 为了防止 clash repo 再出什么问题，我 fork 了一下 [sileneer/clash-verge-rev](https://github.com/sileneer/clash-verge-rev)
 
-> Updated on 15 Nov 2023:
+> Updated on 26 Nov 2023:
 >
-> clash-rev 已接盘原 clash repo: https://github.com/MerlinKodo/clash-rev
+> [clash-verge-rev](https://github.com/sileneer/clash-verge-rev) 已接盘原 clash verge repo
 
 > Updated on 02 Nov 2023: 
 > 
@@ -143,11 +135,13 @@ Referal code: DUANG114514
    ![Alt text](/assets/image-8.png)
    ![Alt text](/assets/image-7.png)
 
+#### Troubleshot
+
+如果重启电脑后发现连不上网，记得去设置里看一下是不是上次代理忘记关了，重置一下代理设置。
+
 ### macOS
 
 ### ClashX
-
-> Clash X 的 github repo 也 archive 了（
 
 下载地址：
 
@@ -159,7 +153,37 @@ Click the image before to watch the video.
 
 <video src="../assets/macOS.mp4" controls title="Title"></video>
 
+### Clash Verge (For both macOS and Windows)
+
+Download from [release](https://github.com/wonfen/clash-verge-rev/releases). Supports Windows x64, Linux x86_64 and macOS 11+
+
+- [Windows x64](https://github.com/wonfen/clash-verge-rev/releases/download/v1.4.0/Clash.Verge_1.4.0_x64_zh-CN.msi)
+- [macOS intel](https://github.com/wonfen/clash-verge-rev/releases/download/v1.4.0/Clash.Verge_1.4.0_x64.dmg)
+- [macOS arm](https://github.com/wonfen/clash-verge-rev/releases/download/v1.4.0/Clash.Verge_1.4.0_aarch64.dmg)
+- [Linux AppImage](https://github.com/wonfen/clash-verge-rev/releases/download/v1.4.0/clash-verge_1.4.0_amd64.AppImage)
+- [Linux deb](https://github.com/wonfen/clash-verge-rev/releases/download/v1.4.0/clash-verge_1.4.0_amd64.deb)
+
+Notes: If you could not start the app on Windows, please check that you have [Webview2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section) installed.
+
+Notes：If you encounter the following on macOS:
+
+![Alt text](image.png)
+
+Please run the following command in the terminal:
+
+```bash
+xattr -d com.apple.quarantine /Applications/Clash\ Verge.app
+```
+
+Replace the `/Applications/Clash\ Verge.app` with the path of your Clash Verge app
+
+使用教程：
+
+<video src="../assets/clash-verge.mp4" controls title="Title"></video>
+
 ### Android / HarmonyOS
+
+
 
 
 ### iOS
@@ -167,6 +191,8 @@ Click the image before to watch the video.
 
 
 ### Linux
+
+Refer to [Clash Verge (For both macOS and Windows)](#clash-verge-for-both-macos-and-windows)
 
 ### Router
 
