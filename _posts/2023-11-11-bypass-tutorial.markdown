@@ -8,9 +8,7 @@ categories: Network
 
 **Table of content:**
 - [Before continuing...](#before-continuing)
-- [原理](#原理)
-  - [一些名词](#一些名词)
-  - [如何使用](#如何使用)
+- [如何使用](#如何使用)
 - [机场推荐](#机场推荐)
   - [省流](#省流)
     - [SKY VPN](#sky-vpn)
@@ -33,17 +31,7 @@ Please follow the laws and regulations of the country and region you are in now.
 
 <ins>If you are to conduct interviews or important activities, it is highly recommended to use your own roaming data or eSIM plans (on iPhone or Android phone with eSIM supported).</ins>
 
-## 原理
-
-### 一些名词
-
-> 机场：机场指的是一些提供代理服务的网站，用户可以通过购买套餐来使用代理服务。
-
-> Clash, v2ray: 跨平台的基于规则的代理工具
-
-> Clash for Windows / Clash Verge: Clash for Windows 是基于 Clash 的一个 GUI 客户端，可以通过图形界面来配置代理规则
-
-### 如何使用
+## 如何使用
 
 Clash 客户端是用来配置代理规则的，它可以通过订阅链接来获取代理规则。机场一般是个人在境外组建的服务器，他们提供订阅链接，然后我们用 Clash 的时候，就可以通过他们的服务器代理访问境外的网站。
 
