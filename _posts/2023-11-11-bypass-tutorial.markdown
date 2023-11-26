@@ -100,6 +100,8 @@ Download from [release](https://github.com/wonfen/clash-verge-rev/releases). Sup
 - [Linux AppImage](https://github.com/wonfen/clash-verge-rev/releases/download/v1.4.0/clash-verge_1.4.0_amd64.AppImage)
 - [Linux deb](https://github.com/wonfen/clash-verge-rev/releases/download/v1.4.0/clash-verge_1.4.0_amd64.deb)
 
+If the above links are not working, download the [release](https://github.com/sileneer/sileneer.github.io/releases/tag/clash) from my GitHub repo.
+
 安装配置教程：
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/C_q8Cv0A_cc?si=amLxFRkkwWEVD2Pl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -175,7 +177,7 @@ Download from [release](https://github.com/wonfen/clash-verge-rev/releases). Sup
 
 下载地址：
 
-Download from [gh-pages -> assets/Clash.img](https://github.com/sileneer/sileneer.github.io/blob/gh-pages/assets/ClashX.dmg)
+Download from [release](https://github.com/sileneer/sileneer.github.io/releases/tag/clash)
 
 安装配置教程：
 
@@ -183,7 +185,7 @@ Download from [gh-pages -> assets/Clash.img](https://github.com/sileneer/silenee
 
 ### Android / HarmonyOS
 
-Download the apk from [release](
+Download the apk from [release](https://github.com/sileneer/sileneer.github.io/releases/tag/clash)
 
 ### iOS
 
