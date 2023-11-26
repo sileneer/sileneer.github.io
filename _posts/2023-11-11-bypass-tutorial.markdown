@@ -22,7 +22,7 @@ Table of content:
     - [Troubleshot](#troubleshot)
   - [macOS](#macos)
   - [ClashX](#clashx)
-  - [Clash Verge (For both macOS and Windows)](#clash-verge-for-both-macos-and-windows)
+  - [\[Recommended\] Clash Verge (For both macOS and Windows)](#recommended-clash-verge-for-both-macos-and-windows)
   - [Android / HarmonyOS](#android--harmonyos)
   - [iOS](#ios)
   - [Linux](#linux)
@@ -153,7 +153,7 @@ Click the image before to watch the video.
 
 <video src="../assets/macOS.mp4" controls title="Title"></video>
 
-### Clash Verge (For both macOS and Windows)
+### [Recommended] Clash Verge (For both macOS and Windows)
 
 Download from [release](https://github.com/wonfen/clash-verge-rev/releases). Supports Windows x64, Linux x86_64 and macOS 11+
 
@@ -178,6 +178,9 @@ xattr -d com.apple.quarantine /Applications/Clash\ Verge.app
 Replace the `/Applications/Clash\ Verge.app` with the path of your Clash Verge app
 
 使用教程：
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+
 
 <video src="../assets/clash-verge.mp4" controls title="Title"></video>
 
