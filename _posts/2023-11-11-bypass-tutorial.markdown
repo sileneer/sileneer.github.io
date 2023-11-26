@@ -17,16 +17,15 @@ Table of content:
     - [OuO Network](#ouo-network)
   - [机场比较](#机场比较)
 - [配置](#配置)
-  - [Windows](#windows)
-    - [Clash for Windows](#clash-for-windows)
-    - [Troubleshot](#troubleshot)
-  - [macOS](#macos)
-  - [ClashX](#clashx)
-  - [\[Recommended\] Clash Verge (For both macOS and Windows)](#recommended-clash-verge-for-both-macos-and-windows)
+  - [\[Recommended\] Clash Verge (For Linux, macOS and Windows)](#recommended-clash-verge-for-linux-macos-and-windows)
+  - [Windows: Clash for Windows](#windows-clash-for-windows)
+  - [macOS: ClashX](#macos-clashx)
   - [Android / HarmonyOS](#android--harmonyos)
   - [iOS](#ios)
-  - [Linux](#linux)
   - [Router](#router)
+- [Troubleshot](#troubleshot)
+  - [Windows](#windows)
+  - [macOS](#macos)
 
 ## Before continuing... 
 
@@ -87,9 +86,25 @@ Referal code: DUANG114514
 
 ## 配置
 
-### Windows
+### [Recommended] Clash Verge (For Linux, macOS and Windows)
 
-#### Clash for Windows
+**Please go to [Troubleshot](#troubleshot) if you encounter any problems.**
+
+Download from [release](https://github.com/wonfen/clash-verge-rev/releases). Supports Windows x64, Linux x86_64 and macOS 11+
+
+- [Windows x64](https://github.com/wonfen/clash-verge-rev/releases/download/v1.4.0/Clash.Verge_1.4.0_x64_zh-CN.msi)
+- [macOS intel](https://github.com/wonfen/clash-verge-rev/releases/download/v1.4.0/Clash.Verge_1.4.0_x64.dmg)
+- [macOS arm](https://github.com/wonfen/clash-verge-rev/releases/download/v1.4.0/Clash.Verge_1.4.0_aarch64.dmg)
+- [Linux AppImage](https://github.com/wonfen/clash-verge-rev/releases/download/v1.4.0/clash-verge_1.4.0_amd64.AppImage)
+- [Linux deb](https://github.com/wonfen/clash-verge-rev/releases/download/v1.4.0/clash-verge_1.4.0_amd64.deb)
+
+安装配置教程：
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C_q8Cv0A_cc?si=amLxFRkkwWEVD2Pl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+### Windows: Clash for Windows
+
+**Please go to [Troubleshot](#troubleshot) if you encounter any problems.**
 
 > Updated on 26 Nov 2023:
 >
@@ -135,37 +150,40 @@ Referal code: DUANG114514
    ![Alt text](/assets/image-8.png)
    ![Alt text](/assets/image-7.png)
 
-#### Troubleshot
-
-如果重启电脑后发现连不上网，记得去设置里看一下是不是上次代理忘记关了，重置一下代理设置。
-
-### macOS
-
-### ClashX
+### macOS: ClashX
 
 下载地址：
 
 Download from [gh-pages -> assets/Clash.img](https://github.com/sileneer/sileneer.github.io/blob/gh-pages/assets/ClashX.dmg)
 
-参考安装视频：
+安装配置教程：
 
-Click the image before to watch the video.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zTLOdZh6g08?si=d0vGDi5swwUJ-d3u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<video src="../assets/macOS.mp4" controls title="Title"></video>
+### Android / HarmonyOS
 
-### [Recommended] Clash Verge (For both macOS and Windows)
 
-Download from [release](https://github.com/wonfen/clash-verge-rev/releases). Supports Windows x64, Linux x86_64 and macOS 11+
 
-- [Windows x64](https://github.com/wonfen/clash-verge-rev/releases/download/v1.4.0/Clash.Verge_1.4.0_x64_zh-CN.msi)
-- [macOS intel](https://github.com/wonfen/clash-verge-rev/releases/download/v1.4.0/Clash.Verge_1.4.0_x64.dmg)
-- [macOS arm](https://github.com/wonfen/clash-verge-rev/releases/download/v1.4.0/Clash.Verge_1.4.0_aarch64.dmg)
-- [Linux AppImage](https://github.com/wonfen/clash-verge-rev/releases/download/v1.4.0/clash-verge_1.4.0_amd64.AppImage)
-- [Linux deb](https://github.com/wonfen/clash-verge-rev/releases/download/v1.4.0/clash-verge_1.4.0_amd64.deb)
 
-Notes: If you could not start the app on Windows, please check that you have [Webview2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section) installed.
+### iOS
 
-Notes：If you encounter the following on macOS:
+### Router
+
+参考：
+1. [小米 AX1800 安装 ShellClash](https://zhuanlan.zhihu.com/p/458905777)
+2. [Github: juewuy/ShellCrash](https://github.com/juewuy/ShellCrash/releases)
+
+## Troubleshot
+
+### Windows
+
+1. 如果重启电脑后发现连不上网，记得去设置里看一下是不是上次代理忘记关了，重置一下代理设置。
+
+2. If you could not start the app on Windows, please check that you have [Webview2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section) installed.
+
+### macOS
+
+If you encounter the following on macOS:
 
 ![Alt text](/assets/image-9.png)
 
@@ -176,29 +194,3 @@ xattr -d com.apple.quarantine /Applications/Clash\ Verge.app
 ```
 
 Replace the `/Applications/Clash\ Verge.app` with the path of your Clash Verge app
-
-使用教程：
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zTLOdZh6g08?si=d0vGDi5swwUJ-d3u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
-<video src="../assets/clash-verge.mp4" controls title="Title"></video>
-
-### Android / HarmonyOS
-
-
-
-
-### iOS
-
-
-
-### Linux
-
-Refer to [Clash Verge (For both macOS and Windows)](#clash-verge-for-both-macos-and-windows)
-
-### Router
-
-参考：
-1. [小米 AX1800 安装 ShellClash](https://zhuanlan.zhihu.com/p/458905777)
-2. [Github: juewuy/ShellCrash](https://github.com/juewuy/ShellCrash/releases)
