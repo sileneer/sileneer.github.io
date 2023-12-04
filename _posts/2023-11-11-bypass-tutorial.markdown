@@ -18,8 +18,8 @@ hidden: true
   - [机场比较](#机场比较)
 - [安装与配置](#安装与配置)
   - [\[Recommended\] Clash Verge (For Linux, macOS and Windows)](#recommended-clash-verge-for-linux-macos-and-windows)
-  - [Windows: Clash for Windows](#windows-clash-for-windows)
-  - [macOS: ClashX](#macos-clashx)
+  - [\[Deprecated\] Windows: Clash for Windows](#deprecated-windows-clash-for-windows)
+  - [\[Deprecated\] macOS: ClashX](#deprecated-macos-clashx)
   - [Android / HarmonyOS](#android--harmonyos)
   - [iOS](#ios)
   - [Router](#router)
@@ -98,7 +98,7 @@ If the above links are not working, download the [release](https://github.com/si
 
 
 
-### Windows: Clash for Windows
+### [Deprecated] Windows: Clash for Windows
 
 **Please go to [Troubleshot](#troubleshot) if you encounter any problems.**
 
@@ -161,7 +161,7 @@ If the above links are not working, download the [release](https://github.com/si
    ![Alt text](/assets/image-8.png)
    ![Alt text](/assets/image-7.png)
 
-### macOS: ClashX
+### [Deprecated] macOS: ClashX
 
 下载地址：
 
