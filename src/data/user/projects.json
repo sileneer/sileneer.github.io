@@ -1,36 +1,31 @@
 [
   {
-    "name": "ProjectConnect",
-    "description": "A platform for developers to share projects, collaborate, and network. Features real-time chat, project boards, and authentication.",
+    "name": "Data-Driven Method for Li-Ion Battery Health Monitoring",
+    "description": "We propose a simple yet effective machine learning framework utilizing Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) models for SOH prediction, addressing the common issues of high complexity, low interpretability, and high training costs. ",
     "technologies": [
-      "React",
-      "Node.js",
-      "MongoDB",
-      "Socket.io",
-      "OAuth"
+      "Python",
+      "PyTorch"
     ],
-    "link": "https://www.github.com",
+    "link": "https://github.com/sileneer/NRP_2022_EEE12",
     "screenshots": [
-      "/projects/connect1.png",
-      "/projects/connect2.png"
+      "/projects/battery.png"
     ],
-    "role": "Lead Developer",
-    "duration": "6 months"
+    "role": "Group leader",
+    "duration": "12 months"
   },
   {
-    "name": "TaskManager",
-    "description": "A productivity app for managing tasks, deadlines, and team collaboration. Includes calendar integration and notifications.",
+    "name": "Awesome Portfolio React",
+    "description": "A modern, customizable React template for developer portfolios. Built with React and Material-UI (@mui/material) featuring a clean, professional design with multiple sections to showcase your skills, experience, and projects.",
     "technologies": [
       "React",
-      "Redux",
-      "Express",
-      "PostgreSQL"
+      "JavaScripts",
+      "Material UI"
     ],
-    "link": "https://www.github.com",
+    "link": "https://github.com/sileneer/awesome-portfolio-page-react",
     "screenshots": [
-      "/projects/taskmanager1.png"
+      "/projects/portfolio.png"
     ],
     "role": "Full Stack Developer",
-    "duration": "4 months"
+    "duration": "Continuous"
   }
 ]

@@ -1,105 +1,141 @@
 {
-  "summary": "Full Stack Developer with experience building scalable web applications and APIs. Passionate about clean code, UI/UX, and continuous learning.",
+  "summary": "Engineering student at the University of Cambridge with hands-on experience in full-stack development, machine learning, and data-driven engineering. Skilled in building scalable web applications and optimisation platforms using Angular, Java, and REST APIs, as well as developing predictive models with PyTorch and TensorFlow. Passionate about clean, efficient code, intuitive UI/UX design, and applying software and ML principles to solve complex real-world engineering problems.",
   "experience": [
     {
-      "company": "TechCorp",
-      "role": "Frontend Engineer",
-      "dates": "2023 - Present",
+      "company": "Minimax Labs",
+      "role": "Software Engineer Intern",
+      "dates": "Jun 2025 - Sept 2025",
       "location": "London, UK",
-      "description": "Lead development of dashboard features using React, TypeScript, and Redux. Collaborated with product managers and designers to deliver solutions for clients.",
+      "description": "Developed and enhanced large-scale optimisation and data management platforms using Angular, Java, and REST APIs, improving system reliability, usability, and frontend-backend integration.",
       "technologies": [
-        "React",
-        "TypeScript",
-        "Redux"
+        "Angular",
+        "Java",
+        "TypeScripts",
+        "Git"
       ],
       "achievements": [
-        "Improved dashboard load time",
-        "Mentored junior engineers"
+        "Built reusable UI components with Angular and TypeScript",
+        "Improved system reliability",
+        "Enhanced user experience through refined interface workflows"
       ]
     },
     {
-      "company": "WebSolutions",
-      "role": "Software Engineer",
-      "dates": "2021 - 2023",
-      "location": "Remote",
-      "description": "Worked on integrations, building RESTful APIs with Node.js and Express. Improved CI/CD pipelines and mentored developers.",
+      "company": "Nanyang Technological University",
+      "role": "Student Researcher",
+      "dates": "Apr 2022 - March 2023",
+      "location": "Singapore",
+      "description": "Conducted research on data-driven methods for Li-ion battery health monitoring, developing machine learning models to predict battery State-of-Health with high accuracy.",
       "technologies": [
-        "Node.js",
-        "Express"
+        "Python",
+        "PyTorch",
+        "NumPy",
+        "Pandas",
+        "Matplotlib"
       ],
       "achievements": [
-        "Reduced deployment errors"
+        "Achieved an average RMSE of 0.72% in battery health prediction",
+        "Awarded Gold Prize in the Nanyang Research Programme (NRP 2022)",
+        "Open-sourced the project for reproducibility and further research"
       ]
     }
   ],
   "education": [
     {
-      "degree": "B.Sc. in Computer Science",
-      "institution": "Example University",
-      "dates": "2017 - 2021",
-      "gpa": "3.8",
+      "degree": "BA (Hons) and MEng in Engineering",
+      "institution": "University of Cambridge",
+      "dates": "2024 - 2028",
+      "gpa": "",
       "coursework": [
-        "Algorithms",
-        "Web Development",
-        "Databases"
+        "Mechanics",
+        "Structures",
+        "Materials",
+        "Thermofluid Mechanics",
+        "Electrical Engineering",
+        "Information Engineering",
+        "Mathematical Methods"
       ],
       "extracurriculars": [
-        "Coding Club President"
+        "EV Battery Engineering at Full Blue Racing Club",
+        "DevOps Engineer at Cambridge University Chinese Undergraduate Society"
       ]
     },
     {
-      "degree": "Full Stack Web Development Bootcamp",
-      "institution": "Coursera",
-      "dates": "2020"
+      "degree": "EE111B – Electrical & Computer Engineering Principles and Practice",
+      "institution": "National University of Singapore",
+      "dates": "May 2022 - Jul 2022",
+      "gpa": "A",
+      "coursework": [
+        "Electronic Circuits",
+        "Computer-Aided Systems",
+        "Robotics",
+        "Embedded Systems Design"
+      ],
+      "extracurriculars": [
+        "Built a sensor-assisted autonomous robotic vehicle as the final project"
+      ]
+    },
+    {
+      "degree": "Singapore-Cambridge GCE A Level",
+      "institution": "Hwa Chong Institution",
+      "dates": "2020 - 2023",
+      "gpa": "4A + H3 Distinction",
+      "coursework": [
+        "Mathematics",
+        "Physics",
+        "Chemistry",
+        "Economics",
+        "Semiconductor Physics and Devices (NTU-H3)"
+      ],
+      "extracurriculars": [
+        "Machine Learning Section Leader of Hwa Chong Infocomm and Robotics Society"
+      ]
     }
   ],
   "skills": [
+    "C",
+    "C++",
+    "Java",
+    "Python",
     "JavaScript",
     "TypeScript",
-    "React",
-    "Redux",
+    "Dart",
+    "Kotlin",
+    "SQL",
+    "Angular",
+    "Flutter",
     "Node.js",
-    "Express",
-    "HTML",
-    "CSS",
-    "Git",
-    "REST APIs",
-    "MongoDB",
-    "Jest",
-    "Docker",
+    "Flask",
+    "Spring Boot",
+    "Figma",
     "AWS",
-    "PostgreSQL",
-    "GraphQL",
-    "Material-UI",
-    "Webpack",
-    "ESLint",
-    "OAuth",
-    "Socket.io",
-    "Redis",
-    "Nginx",
+    "REST APIs",
+    "PyTorch",
+    "TensorFlow",
+    "Scikit-learn",
+    "NumPy",
+    "Pandas",
+    "Matplotlib",
+    "SciPy",
+    "Arduino",
+    "SolidWorks",
+    "KiCad",
+    "LTSpice",
+    "PicoScope",
+    "Git",
     "Linux",
-    "Python"
-  ],
-  "certifications": [
-    {
-      "title": "AWS Certified Developer",
-      "certificateLink": "https://www.opencerts.io"
-    },
-    {
-      "title": "Scrum Master",
-      "certificateLink": "https://www.opencerts.io"
-    }
-  ],
-  "awards": [
-    {
-      "title": "Best Developer 2022",
-      "certificateLink": "https://www.opencerts.io"
-    }
+    "Agile",
+    "Scrum",
+    "Object-Oriented Programming (OOP)",
+    "Model–View–Controller (MVC)",
+    "Functional Programming",
+    "DevOps",
+    "CI/CD"
   ],
   "interests": [
     "Open Source",
-    "Travel",
-    "Photography"
+    "Software Engineering",
+    "Machine Learning",
+    "Data-driven Research"
   ],
   "cvDownload": "/CV.pdf"
 }
