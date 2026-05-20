@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#09090b" />
+
+  <title>Zihao Liu | Software Developer Portfolio</title>
+  <meta name="description"
+    content="Zihao Liu — Engineering student at Cambridge, passionate about machine learning and software development." />
+  <meta name="author" content="Zihao Liu" />
+  <meta name="keywords"
+    content="Software Developer, React, Machine Learning, Python, PyTorch, Cambridge, Portfolio" />
+  <link rel="canonical" href="https://sileneer.github.io/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sileneer.github.io/" />
+  <meta property="og:title" content="Zihao Liu | Software Developer Portfolio" />
+  <meta property="og:description"
+    content="Engineering student at Cambridge, passionate about machine learning and software development." />
+  <meta property="og:image" content="https://sileneer.github.io/profile_photo.jpg" />
+  <meta property="og:image:alt" content="Portrait of Zihao Liu" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Zihao Liu | Software Developer Portfolio" />
+  <meta name="twitter:description"
+    content="Engineering student at Cambridge, passionate about machine learning and software development." />
+  <meta name="twitter:image" content="https://sileneer.github.io/profile_photo.jpg" />
+
+  <link rel="apple-touch-icon" href="/logo192.png" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <script>
+    // Decode the SPA-fallback redirect from 404.html so BrowserRouter sees the real path.
+    (function (l) {
+      if (l.search[1] === '/') {
+        var decoded = l.search.slice(1).split('&').map(function (s) {
+          return s.replace(/~and~/g, '&');
+        }).join('?');
+        window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+      }
+    }(window.location));
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Zihao Liu",
+      "jobTitle": "Software Developer",
+      "url": "https://sileneer.github.io/",
+      "image": "https://sileneer.github.io/profile_photo.jpg",
+      "email": "mailto:zl600@cam.ac.uk",
+      "sameAs": [
+        "https://www.linkedin.com/in/zihao-liu-470986208/",
+        "https://github.com/sileneer/"
+      ],
+      "knowsAbout": [
+        "Machine Learning",
+        "Software Development",
+        "React",
+        "Python",
+        "PyTorch"
+      ]
+    }
+  </script>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script type="module" src="/src/index.jsx"></script>
+</body>
+
+</html>

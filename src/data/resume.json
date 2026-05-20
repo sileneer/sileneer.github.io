@@ -10,7 +10,7 @@
       "technologies": [
         "Angular",
         "Java",
-        "TypeScripts",
+        "TypeScript",
         "Git"
       ],
       "achievements": [
@@ -44,7 +44,6 @@
       "degree": "BA (Hons) and MEng in Engineering",
       "institution": "University of Cambridge",
       "dates": "2024 - 2028",
-      "gpa": "",
       "coursework": [
         "Mechanics",
         "Structures",

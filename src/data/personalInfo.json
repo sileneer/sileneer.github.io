@@ -2,7 +2,6 @@
   "name": "Zihao Liu",
   "title": "Software Developer",
   "email": "zl600@cam.ac.uk",
-  "phone": "",
   "location": "Cambridge, UK",
   "linkedin": "https://www.linkedin.com/in/zihao-liu-470986208/",
   "github": "https://github.com/sileneer/",
@@ -11,6 +10,6 @@
   "bio": "Year 2 Engineering student at Cambridge. Passionate about machine learning and software development.",
   "languages": [
     "English",
-    "Chinese (Mandrain)"
+    "Chinese (Mandarin)"
   ]
 }

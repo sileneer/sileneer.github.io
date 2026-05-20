@@ -6,18 +6,16 @@ Your portfolio data is organized into **separate JSON files** for better maintai
 
 ```
 src/data/
-├── core/
-│   └── navigation.json       # Navigation menu configuration
-└── user/
-    ├── personalInfo.json     # Personal information and bio
-    ├── resume.json           # Professional experience and education
-    ├── projects.json         # Portfolio projects
-    └── contact.json          # Contact information and social links
+├── navigation.json       # Navigation menu configuration
+├── personalInfo.json     # Personal information and bio
+├── resume.json           # Professional experience and education
+├── projects.json         # Portfolio projects
+└── contact.json          # Contact information and social links
 ```
 
 ---
 
-## 📄 `src/data/user/personalInfo.json`
+## 📄 `src/data/personalInfo.json`
 
 Contains your personal information displayed on the home page.
 
@@ -53,7 +51,7 @@ Contains your personal information displayed on the home page.
 
 ---
 
-## 📄 `src/data/core/navigation.json`
+## 📄 `src/data/navigation.json`
 
 Configures the navigation menu at the top of your portfolio.
 
@@ -62,23 +60,27 @@ Configures the navigation menu at the top of your portfolio.
 - `menuItems` (array of objects): Navigation menu items
   - `name` (string): Display name of menu item
   - `path` (string): Route path (e.g., "/", "/resume", "/projects", "/contact")
+  - `component` (string): Name of the page component to render at this path.
+    Must match a key in `PAGE_COMPONENTS` in `src/App.jsx` (defaults:
+    `HomePage`, `ResumePage`, `ProjectsPage`, `ContactPage`). Misspellings
+    throw at app load.
 
 ### Example:
 ```json
 {
   "brand": "John Doe",
   "menuItems": [
-    { "name": "Home", "path": "/" },
-    { "name": "Resume", "path": "/resume" },
-    { "name": "Projects", "path": "/projects" },
-    { "name": "Contact", "path": "/contact" }
+    { "name": "Home",     "path": "/",         "component": "HomePage" },
+    { "name": "Resume",   "path": "/resume",   "component": "ResumePage" },
+    { "name": "Projects", "path": "/projects", "component": "ProjectsPage" },
+    { "name": "Contact",  "path": "/contact",  "component": "ContactPage" }
   ]
 }
 ```
 
 ---
 
-## 📄 `src/data/user/resume.json`
+## 📄 `src/data/resume.json`
 
 Contains your professional background, skills, and qualifications.
 
@@ -156,7 +158,7 @@ Contains your professional background, skills, and qualifications.
 
 ---
 
-## 📄 `src/data/user/projects.json`
+## 📄 `src/data/projects.json`
 
 An array of your portfolio projects.
 
@@ -188,21 +190,24 @@ Array of project objects, each with the following fields:
 
 ---
 
-## 📄 `src/data/user/contact.json`
+## 📄 `src/data/contact.json`
 
 Additional contact information and social media links.
 
 ### Allowed Fields:
 - `message` (string): Custom contact message or call-to-action
+- `responseTime` (string, optional): Expected reply time shown on the Contact
+  page's stat strip (e.g. "Within 24 hours", "Same day"). Max 40 characters.
+  Falls back to "Within 24 hours" if omitted.
 - `alternateEmail` (string, optional): Secondary email address
 - `twitter` (string, optional): Twitter profile URL
 - `facebook` (string, optional): Facebook profile URL
-- `calendly` (string, optional): Calendly or meeting scheduler link
 
 ### Example:
 ```json
 {
   "message": "Feel free to reach out for collaboration, freelance work, or just to connect!",
+  "responseTime": "Within 24 hours",
   "alternateEmail": "contact@example.com",
   "twitter": "https://twitter.com/johndoe",
   "facebook": "https://facebook.com/johndoe"
@@ -230,7 +235,7 @@ Additional contact information and social media links.
 
 ## ⚠️ Important Notes
 
-1. **Data Validation**: Only use the fields listed above to ensure compatibility with the application components.
+1. **Data Validation**: Each JSON file is validated against a Zod schema in `src/data/schemas.js` at app startup. If a required field is missing, has the wrong type, or fails a constraint (e.g. paths must start with `/`), the browser console shows a clear error naming the file and the bad field path. Update the schema whenever you add new fields.
 2. **Privacy**: Do not include sensitive or private information in your portfolio data.
 3. **Image Paths**: All image paths should start with `/` and reference files in the `public/` folder.
 4. **URLs**: Always use complete URLs for external links (including `https://`).
@@ -243,7 +248,25 @@ Additional contact information and social media links.
 
 If you need to add new fields:
 1. Update the appropriate JSON file in `src/data/`
-2. Update this documentation
-3. Modify the corresponding page component in `src/components/pages/`
-4. Test thoroughly to ensure the new fields display correctly
+2. Update the matching schema in `src/data/schemas.js` so validation accepts
+   the new field
+3. Update this documentation
+4. Modify the corresponding page component in `src/components/pages/`
+5. Test thoroughly to ensure the new fields display correctly
+
+### Adding a new page
+
+The route table is driven from `navigation.json`, so adding a page takes three
+small edits:
+
+1. Create the new component, e.g. `src/components/pages/BlogPage.jsx`.
+2. Register it in `src/App.jsx`: add a `lazy()` import and include `BlogPage`
+   in the `PAGE_COMPONENTS` map.
+3. Add a menu entry to `src/data/navigation.json`:
+   ```json
+   { "name": "Blog", "path": "/blog", "component": "BlogPage" }
+   ```
+
+No `<Route>` boilerplate to touch — App.jsx generates routes from the menu
+items at render time.
 

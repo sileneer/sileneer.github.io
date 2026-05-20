@@ -1,7 +1,7 @@
 [
   {
     "name": "Data-Driven Method for Li-Ion Battery Health Monitoring",
-    "description": "We propose a simple yet effective machine learning framework utilizing Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) models for SOH prediction, addressing the common issues of high complexity, low interpretability, and high training costs. ",
+    "description": "We propose a simple yet effective machine learning framework utilizing Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) models for SOH prediction, addressing the common issues of high complexity, low interpretability, and high training costs.",
     "technologies": [
       "Python",
       "PyTorch"
@@ -18,7 +18,7 @@
     "description": "A modern, customizable React template for developer portfolios. Built with React and Material-UI (@mui/material) featuring a clean, professional design with multiple sections to showcase your skills, experience, and projects.",
     "technologies": [
       "React",
-      "JavaScripts",
+      "JavaScript",
       "Material UI"
     ],
     "link": "https://github.com/sileneer/awesome-portfolio-page-react",
