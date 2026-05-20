@@ -25,5 +25,8 @@ yarn-error.log*
 # JetBrains
 .idea/
 
+# VSCode
+.vscode/
+
 # WARP
 WARP.md
