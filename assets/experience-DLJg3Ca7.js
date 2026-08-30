@@ -1,1 +1,0 @@
-var e=e=>{if(!Array.isArray(e))return 0;let t=[];if(e.forEach(e=>{let n=String(e?.dates??``).match(/\b(?:19|20)\d{2}\b/g);n&&n.forEach(e=>t.push(parseInt(e,10)))}),!t.length)return 0;let n=new Date().getFullYear()-Math.min(...t);return n>0?n:0};export{e as t};

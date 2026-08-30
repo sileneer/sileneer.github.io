@@ -1,0 +1,1 @@
+var e=[[`path`,{d:`M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16`}],[`rect`,{width:`20`,height:`14`,x:`2`,y:`6`,rx:`2`}]],t=e=>{if(!Array.isArray(e))return 0;let t=[];if(e.forEach(e=>{let n=String(e?.dates??``).match(/\b(?:19|20)\d{2}\b/g);n&&n.forEach(e=>t.push(parseInt(e,10)))}),!t.length)return 0;let n=new Date().getFullYear()-Math.min(...t);return n>0?n:0};export{e as n,t};
