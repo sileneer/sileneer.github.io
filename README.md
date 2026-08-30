@@ -16,6 +16,7 @@
 - **♿ Accessible**: Clean heading hierarchy, ARIA attributes, focus states, and reduced-motion support
 - **⚙️ Fully Customizable**: All content driven by simple JSON configuration files
 - **🔒 Data Validation**: Zod schemas validate the JSON at startup, with a friendly error screen if something is off
+- **🔍 SEO Ready**: Page titles, Open Graph/Twitter cards, and Person JSON-LD are generated from your JSON data at build time
 
 ## 🎨 Material-UI Implementation
 
@@ -28,7 +29,7 @@ This portfolio is built with Material-UI components throughout:
 - **Typography**: Consistent text hierarchy with the Material-UI typography system
 - **Interactive**: `Button`, `IconButton`, `Chip` components with built-in ripple effects
 - **Media**: `Avatar` and lazy-loaded images with proper aspect ratios
-- **Icons**: `@mui/icons-material` for professional vector icons
+- **Icons**: rendered via [morphicons](https://www.morphicons.com/) (`AppIcon` wrapper) using Lucide icon data — icons can spring-morph between states (e.g. the theme toggle)
 - **Motion**: [Framer Motion](https://www.framer.com/motion/) for entrance, hover, and scroll-triggered animations
 
 ### Theme Features
@@ -79,7 +80,7 @@ Your portfolio data is organized into separate JSON files for easy management:
    - Add additional contact methods and social media links
 
 6. **Images**:
-   - Add your profile photo to `public/profile_photo.png`
+   - Add your profile photo to `public/profile_photo.jpg`
    - Add your CV to `public/CV.pdf` (optional)
    - Add project screenshots to `public/projects/` folder (optional)
 
@@ -162,9 +163,12 @@ This project can be deployed to various platforms:
 
 ### GitHub Pages
 ```bash
-npm run build
-# Deploy the build/ folder to your hosting service
+npm run deploy
 ```
+This builds the site and publishes `build/` to the `gh-pages` branch using the
+[gh-pages](https://github.com/tschaub/gh-pages) package. If your site is served
+from a sub-path (`https://<user>.github.io/<repo>/` rather than a user page),
+set `base: '/<repo>/'` in `vite.config.js` first.
 
 ### Netlify / Vercel
 Simply connect your GitHub repository and these services will automatically build and deploy your portfolio.
@@ -214,7 +218,7 @@ Add additional contact options:
 - Social media (Twitter, Facebook)
 
 ### Adding Images
-- **Profile Photo**: Add your photo as `public/profile_photo.png`
+- **Profile Photo**: Add your photo as `public/profile_photo.jpg`
 - **CV File**: Add your resume PDF as `public/CV.pdf`
 - **Project Screenshots**: Create `public/projects/` folder and add your project images
 

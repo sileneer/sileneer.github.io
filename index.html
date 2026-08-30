@@ -5,37 +5,34 @@
   <meta charset="utf-8" />
   <link rel="icon" href="/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#09090b" />
+  <meta name="theme-color" content="#0f172a" />
 
-  <title>Zihao Liu | Software Developer Portfolio</title>
-  <meta name="description"
-    content="Zihao Liu — Engineering student at Cambridge, passionate about machine learning and software development." />
-  <meta name="author" content="Zihao Liu" />
-  <meta name="keywords"
-    content="Software Developer, React, Machine Learning, Python, PyTorch, Cambridge, Portfolio" />
-  <link rel="canonical" href="https://sileneer.github.io/" />
+  <title>%PORTFOLIO_NAME% | %PORTFOLIO_TITLE%</title>
+  <meta name="description" content="%PORTFOLIO_DESCRIPTION%" />
+  <meta name="author" content="%PORTFOLIO_NAME%" />
+  <link rel="canonical" href="%PORTFOLIO_URL%" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://sileneer.github.io/" />
-  <meta property="og:title" content="Zihao Liu | Software Developer Portfolio" />
-  <meta property="og:description"
-    content="Engineering student at Cambridge, passionate about machine learning and software development." />
-  <meta property="og:image" content="https://sileneer.github.io/profile_photo.jpg" />
-  <meta property="og:image:alt" content="Portrait of Zihao Liu" />
+  <meta property="og:url" content="%PORTFOLIO_URL%" />
+  <meta property="og:title" content="%PORTFOLIO_NAME% | %PORTFOLIO_TITLE%" />
+  <meta property="og:description" content="%PORTFOLIO_DESCRIPTION%" />
+  <meta property="og:image" content="%PORTFOLIO_IMAGE%" />
+  <meta property="og:image:alt" content="Portrait of %PORTFOLIO_NAME%" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Zihao Liu | Software Developer Portfolio" />
-  <meta name="twitter:description"
-    content="Engineering student at Cambridge, passionate about machine learning and software development." />
-  <meta name="twitter:image" content="https://sileneer.github.io/profile_photo.jpg" />
+  <meta name="twitter:title" content="%PORTFOLIO_NAME% | %PORTFOLIO_TITLE%" />
+  <meta name="twitter:description" content="%PORTFOLIO_DESCRIPTION%" />
+  <meta name="twitter:image" content="%PORTFOLIO_IMAGE%" />
 
   <link rel="apple-touch-icon" href="/logo192.png" />
   <link rel="manifest" href="/manifest.json" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" />
 
   <script>
     // Decode the SPA-fallback redirect from 404.html so BrowserRouter sees the real path.
@@ -49,28 +46,7 @@
     }(window.location));
   </script>
 
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Zihao Liu",
-      "jobTitle": "Software Developer",
-      "url": "https://sileneer.github.io/",
-      "image": "https://sileneer.github.io/profile_photo.jpg",
-      "email": "mailto:zl600@cam.ac.uk",
-      "sameAs": [
-        "https://www.linkedin.com/in/zihao-liu-470986208/",
-        "https://github.com/sileneer/"
-      ],
-      "knowsAbout": [
-        "Machine Learning",
-        "Software Development",
-        "React",
-        "Python",
-        "PyTorch"
-      ]
-    }
-  </script>
+  <script type="application/ld+json">%PORTFOLIO_JSONLD%</script>
 </head>
 
 <body>
