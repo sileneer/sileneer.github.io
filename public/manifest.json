@@ -1,6 +1,6 @@
 {
-  "short_name": "Joke Bear",
-  "name": "Joke Bear - Full Stack Developer Portfolio",
+  "short_name": "Zihao Liu",
+  "name": "Zihao Liu — Software Engineer Portfolio",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#007bff",
-  "background_color": "#ffffff"
+  "theme_color": "#0e7490",
+  "background_color": "#0f172a"
 }

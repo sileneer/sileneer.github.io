@@ -1,13 +1,14 @@
 {
   "name": "Zihao Liu",
-  "title": "Software Developer",
-  "email": "zl600@cam.ac.uk",
+  "title": "Software Engineer",
+  "email": "zihao.liu.dev@outlook.com",
+  "phone": "+44 7879 984349",
   "location": "Cambridge, UK",
-  "linkedin": "https://www.linkedin.com/in/zihao-liu-470986208/",
-  "github": "https://github.com/sileneer/",
+  "linkedin": "https://www.linkedin.com/in/zihao-liu-470986208",
+  "github": "https://github.com/sileneer",
   "photo": "/profile_photo.jpg",
-  "website": "https://sileneer.github.io/",
-  "bio": "Year 2 Engineering student at Cambridge. Passionate about machine learning and software development.",
+  "website": "https://www.lzhdev.com",
+  "bio": "Year 3 Engineering student at the University of Cambridge, specialising in Information and Computer Engineering. Passionate about software engineering, machine learning, and AI systems.",
   "languages": [
     "English",
     "Chinese (Mandarin)"

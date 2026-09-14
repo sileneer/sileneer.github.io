@@ -1,22 +1,85 @@
 {
-  "summary": "Engineering student at the University of Cambridge with hands-on experience in full-stack development, machine learning, and data-driven engineering. Skilled in building scalable web applications and optimisation platforms using Angular, Java, and REST APIs, as well as developing predictive models with PyTorch and TensorFlow. Passionate about clean, efficient code, intuitive UI/UX design, and applying software and ML principles to solve complex real-world engineering problems.",
+  "summary": "Year 3 Engineering student at the University of Cambridge, specialising in Information and Computer Engineering, with hands-on experience in low-level firmware engineering at Arm, full-stack development, machine learning research, and agentic AI systems. Skilled in C/C++, Java, Python, and TypeScript, with expertise spanning secure boot firmware, scalable web applications, predictive ML models, and LLM harness workflows including RAG, MCP, and context engineering.",
   "experience": [
     {
-      "company": "Minimax Labs",
-      "role": "Software Engineer Intern",
+      "company": "Arm",
+      "role": "Software Engineer, Central Engineering",
+      "dates": "Jun 2026 - Present",
+      "location": "Cambridge, UK",
+      "description": "Kernel, security, and isolation layer development for Arm's next-generation CPU platform, working on low-level C firmware and secure boot engineering.",
+      "technologies": ["C", "CI/CD"],
+      "achievements": [
+        "Developed kernel, security, and isolation layer firmware in C performing CPU integrity verification at power-on and establishing hardware-backed security layers prior to OS handoff",
+        "Engineered secure bootloader: cryptographically verify Linux image integrity and detect unauthorised modifications, safeguarding the trusted boot chain from power-on to Linux launch",
+        "Profiled and refined performance-critical code paths, substantially improving runtime efficiency across the pre-boot software stack",
+        "Collaborated cross-team within Arm's engineering workflows, leveraging CI/CD pipelines and standard testing tools to validate firmware reliability"
+      ]
+    },
+    {
+      "company": "Minimax Labs Ltd.",
+      "role": "Software Engineer",
       "dates": "Jun 2025 - Sept 2025",
       "location": "London, UK",
-      "description": "Developed and enhanced large-scale optimisation and data management platforms using Angular, Java, and REST APIs, improving system reliability, usability, and frontend-backend integration.",
-      "technologies": [
-        "Angular",
-        "Java",
-        "TypeScript",
-        "Git"
-      ],
+      "description": "Developed frontend features and improved system reliability for large-scale optimisation and data management platforms, including LiNGO (LNG portfolio and logistics optimisation) and DataHub (database system for optimisation algorithms).",
+      "technologies": ["TypeScript", "Angular", "Java", "REST APIs", "Git"],
       "achievements": [
-        "Built reusable UI components with Angular and TypeScript",
-        "Improved system reliability",
-        "Enhanced user experience through refined interface workflows"
+        "Built reusable UI components in TypeScript and Angular, integrated with Java backends through RESTful APIs",
+        "Enhanced usability and maintainability through reusable components, automated saving mechanisms, and system update features",
+        "Deepened software architecture knowledge through OOP patterns, dependency management, and UI/UX principles",
+        "Applied Git workflows and collaborated with senior engineers in both in-person and remote settings"
+      ]
+    },
+    {
+      "company": "Cambridge AI Builder Club (Claude Builder Club)",
+      "role": "Technical Officer",
+      "dates": "Oct 2025 - June 2026",
+      "location": "Cambridge, UK",
+      "description": "University partnership with Anthropic: ran demos, workshops, and hackathons showcasing innovative AI projects from the community.",
+      "technologies": ["Python", "React", "Vue", "Claude API"],
+      "achievements": [
+        "Designed and instructed workshops with code labs, slides, and starter repositories teaching prompt engineering, MCP, Skills, Claude API integration, tool use/function calling, RAG, evaluation, and safety/guardrails",
+        "Led hackathon technical leadership: produced scaffolds and baseline projects, set up API access and rate-limit strategies, mentored teams on-site, and coordinated judging criteria",
+        "Built LLM demo apps and templates in Python and React/Vue with deep Claude integration, featuring streaming UIs and retrieval with vector search"
+      ]
+    },
+    {
+      "company": "Cambridge University Robotics Society",
+      "role": "Software Engineer",
+      "dates": "Oct 2025 - June 2026",
+      "location": "Cambridge, UK",
+      "description": "Developed control and perception systems for a humanoid robot based on InMoov, integrating computer vision and LLM modules for natural interaction.",
+      "technologies": ["Python", "C++", "Arduino", "OpenCV", "MediaPipe"],
+      "achievements": [
+        "Implemented hand gesture and pose detection using Python, MediaPipe, and OpenCV, linked to LLM modules for natural interaction and command interpretation",
+        "Developed embedded control in C++ and Arduino for real-time gesture-based robot movement",
+        "Built autonomous navigation features using SLAM for spatial awareness and mobility"
+      ]
+    },
+    {
+      "company": "Cambridge University Chinese Undergraduate Society",
+      "role": "DevOps Engineer; IT Department Coordinator",
+      "dates": "Oct 2024 - June 2026",
+      "location": "Cambridge, UK",
+      "description": "Developed and maintained the Society's website (React) and WeChat Mini Program (JavaScript), improving engagement for hundreds of members.",
+      "technologies": ["React", "JavaScript", "Git", "DevOps"],
+      "achievements": [
+        "Developed and maintained the Society website (https://www.cambridgeccs.org) in React and WeChat Mini Program in JavaScript, improving engagement for hundreds of members",
+        "Implemented DevOps practices and managed the development workflow via Git, streamlining deployment for rapid, stable feature delivery",
+        "Maintained backend database ensuring data integrity, reliability, and scalability; monitored system performance, detected anomalies, and supported incident response",
+        "Collected and analysed user feedback to prioritise enhancements and provided technical support for events"
+      ]
+    },
+    {
+      "company": "Full Blue Racing",
+      "role": "Electronics Engineer",
+      "dates": "Oct 2024 - June 2026",
+      "location": "Cambridge, UK",
+      "description": "Battery system design and specification for a Formula Student electric race car, including cell modules, BMS, and charging systems.",
+      "technologies": ["C", "C++", "KiCad", "Arduino"],
+      "achievements": [
+        "Designed battery system for Formula Student EV: cell modules, BMS, and charging systems enabling cell balancing, state-of-charge monitoring, and fault detection",
+        "Designed PCBs for the MCU, ECU, and I²C serial bus in KiCad, enabling real-time display of the car's operating status",
+        "Developed embedded C/C++ for sensor data acquisition, I²C communication, and system diagnostics on MCU and ECU"
       ]
     },
     {
@@ -24,38 +87,50 @@
       "role": "Student Researcher",
       "dates": "Apr 2022 - March 2023",
       "location": "Singapore",
-      "description": "Conducted research on data-driven methods for Li-ion battery health monitoring, developing machine learning models to predict battery State-of-Health with high accuracy.",
-      "technologies": [
-        "Python",
-        "PyTorch",
-        "NumPy",
-        "Pandas",
-        "Matplotlib"
-      ],
+      "description": "Developed an LSTM/GRU framework for Li-ion battery health prediction, achieving an average RMSE of 0.724% on real battery datasets. Supervised by Prof. Yan Xu, School of EEE, NTU.",
+      "technologies": ["Python", "PyTorch", "NumPy", "Pandas", "Matplotlib"],
       "achievements": [
-        "Achieved an average RMSE of 0.72% in battery health prediction",
-        "Awarded Gold Prize in the Nanyang Research Programme (NRP 2022)",
-        "Open-sourced the project for reproducibility and further research"
+        "Designed and implemented an LSTM/GRU framework to predict battery State-of-Health, addressing limitations of previous methods (high complexity, low interpretability, high training cost)",
+        "Achieved an average RMSE of 0.724% on real battery datasets, developed and validated in PyTorch",
+        "Awarded Gold for \"Data-Driven Method for Li-Ion Battery Health Monitoring\" at the Nanyang Research Programme (NRP 2022)",
+        "Open-sourced the project on GitHub for reproducibility and further research"
+      ]
+    },
+    {
+      "company": "Hwa Chong Infocomm and Robotics Society",
+      "role": "Machine Learning Section Leader",
+      "dates": "Feb 2022 - Aug 2023",
+      "location": "Singapore",
+      "description": "Provided training to society members on deep learning with TensorFlow, focusing on time-series analysis and NLP applications.",
+      "technologies": ["TensorFlow", "Linux"],
+      "achievements": [
+        "Trained society members on deep learning with TensorFlow, focusing on time-series analysis and NLP applications",
+        "Organised academic workshops and outreach programmes to promote AI and robotics",
+        "Maintained and managed Linux servers for the society's projects and members"
       ]
     }
   ],
   "education": [
     {
-      "degree": "BA (Hons) and MEng in Engineering",
+      "degree": "BA (Hons) and MEng in Engineering (Year 3)",
       "institution": "University of Cambridge",
-      "dates": "2024 - 2028",
+      "dates": "Oct 2024 - Sept 2028",
+      "gpa": "II.1",
+      "location": "Cambridge, UK",
+      "description": "Engineering Area: Information and Computer Engineering",
       "coursework": [
-        "Mechanics",
-        "Structures",
-        "Materials",
-        "Thermofluid Mechanics",
-        "Electrical Engineering",
-        "Information Engineering",
-        "Mathematical Methods"
+        "3F8 Inference (regression, classification, PCA, hidden Markov models)",
+        "3F3 Statistical Signal Processing (maximum-likelihood and Bayesian estimation, Wiener and matched filters)",
+        "3M1 Mathematical Methods (SVD, least squares, Markov chains, constrained optimisation)",
+        "3F7 Information Theory and Coding (entropy, source coding, error-correcting codes)",
+        "3F1 Signals and Systems (z-transform, digital filtering, FFT, random processes)",
+        "4M21 Software Engineering and Design (OOP, UML, design patterns, agile, HCI)"
       ],
       "extracurriculars": [
-        "EV Battery Engineering at Full Blue Racing Club",
-        "DevOps Engineer at Cambridge University Chinese Undergraduate Society"
+        "Electronics Engineer at Full Blue Racing",
+        "DevOps Engineer at Cambridge University Chinese Undergraduate Society",
+        "Software Engineer at Cambridge University Robotics Society",
+        "Technical Officer at Cambridge AI Builder Club"
       ]
     },
     {
@@ -63,6 +138,7 @@
       "institution": "National University of Singapore",
       "dates": "May 2022 - Jul 2022",
       "gpa": "A",
+      "location": "Singapore",
       "coursework": [
         "Electronic Circuits",
         "Computer-Aided Systems",
@@ -76,8 +152,9 @@
     {
       "degree": "Singapore-Cambridge GCE A Level",
       "institution": "Hwa Chong Institution",
-      "dates": "2020 - 2023",
+      "dates": "Jan 2020 - Dec 2023",
       "gpa": "4A + H3 Distinction",
+      "location": "Singapore",
       "coursework": [
         "Mathematics",
         "Physics",
@@ -86,7 +163,8 @@
         "Semiconductor Physics and Devices (NTU-H3)"
       ],
       "extracurriculars": [
-        "Machine Learning Section Leader of Hwa Chong Infocomm and Robotics Society"
+        "Machine Learning Section Leader of Hwa Chong Infocomm and Robotics Society",
+        "Science and Maths Talented Programme"
       ]
     }
   ],
@@ -99,41 +177,53 @@
     "TypeScript",
     "Dart",
     "Kotlin",
-    "SQL",
+    "Git",
+    "Linux",
     "Angular",
     "Flutter",
     "Node.js",
-    "Flask",
     "Spring Boot",
-    "Figma",
     "AWS",
-    "REST APIs",
-    "PyTorch",
-    "TensorFlow",
-    "Scikit-learn",
     "NumPy",
     "Pandas",
     "Matplotlib",
     "SciPy",
+    "Scikit-learn",
+    "PyTorch",
+    "TensorFlow",
     "Arduino",
     "SolidWorks",
     "KiCad",
     "LTSpice",
     "PicoScope",
-    "Git",
-    "Linux",
     "Agile",
     "Scrum",
-    "Object-Oriented Programming (OOP)",
-    "Model–View–Controller (MVC)",
-    "Functional Programming",
+    "OOP",
+    "MVC and Design Patterns",
     "DevOps",
-    "CI/CD"
+    "CI/CD",
+    "RAG",
+    "MCP",
+    "Agent Skills",
+    "Context Engineering",
+    "LLM Evals",
+    "Guardrails",
+    "Claude Code",
+    "Codex"
+  ],
+  "awards": [
+    {
+      "title": "Cambridge Trust Scholarship (Oct 2024 - Sept 2028)"
+    },
+    {
+      "title": "NRP 2022 Gold Prize — \"Data-Driven Method for Li-Ion Battery Health Monitoring\" at NTU, Singapore (Apr 2022 - Mar 2023)"
+    }
   ],
   "interests": [
-    "Open Source",
     "Software Engineering",
     "Machine Learning",
+    "AI & LLM Systems",
+    "Open Source",
     "Data-driven Research"
   ],
   "cvDownload": "/CV.pdf"

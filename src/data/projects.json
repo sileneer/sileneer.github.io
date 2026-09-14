@@ -1,31 +1,64 @@
 [
   {
     "name": "Data-Driven Method for Li-Ion Battery Health Monitoring",
-    "description": "We propose a simple yet effective machine learning framework utilizing Long Short-Term Memory (LSTM) and Gated Recurrent Unit (GRU) models for SOH prediction, addressing the common issues of high complexity, low interpretability, and high training costs.",
+    "description": "Designed and implemented a machine learning framework using LSTM and GRU models to predict battery State-of-Health (SOH), addressing limitations of previous methods including high complexity, low interpretability, and high training costs. Achieved an average RMSE of 0.724% on real battery datasets. Awarded Gold at the Nanyang Research Programme (NRP) 2022.",
     "technologies": [
       "Python",
-      "PyTorch"
+      "PyTorch",
+      "NumPy",
+      "Pandas"
     ],
     "link": "https://github.com/sileneer/NRP_2022_EEE12",
     "screenshots": [
       "/projects/battery.png"
     ],
-    "role": "Group leader",
+    "role": "Student Researcher",
     "duration": "12 months"
   },
   {
-    "name": "Awesome Portfolio React",
-    "description": "A modern, customizable React template for developer portfolios. Built with React and Material-UI (@mui/material) featuring a clean, professional design with multiple sections to showcase your skills, experience, and projects.",
+    "name": "Awesome Portfolio Page",
+    "description": "A React portfolio template web application with data-driven configuration, enabling fully customisable portfolio sites to showcase professional experience, projects, and contact information. Features schema-validated JSON content management, ensuring seamless updates. Deployable to GitHub Pages, Netlify, and Vercel.",
     "technologies": [
       "React",
       "JavaScript",
-      "Material UI"
+      "Material UI",
+      "Vite"
     ],
     "link": "https://github.com/sileneer/awesome-portfolio-page-react",
-    "screenshots": [
-      "/projects/portfolio.png"
-    ],
     "role": "Full Stack Developer",
     "duration": "Continuous"
+  },
+  {
+    "name": "Intelligent System to Prevent Contamination of Recyclables",
+    "description": "Built a YOLOv8-powered smart bin on Raspberry Pi for accurate waste classification, enabling recyclable vs. non-recyclable detection. Achieved 2nd runner-up at the Sustain-a-City Challenge, an urban innovation competition.",
+    "technologies": [
+      "Python",
+      "YOLOv8",
+      "Raspberry Pi"
+    ],
+    "role": "Developer",
+    "duration": "Jun 2023 - Sept 2023"
+  },
+  {
+    "name": "DSTA Today-I-Learned (TIL) AI Hackathon",
+    "description": "Trained computer vision (CV) and natural language processing (NLP) models in PyTorch for robotic object detection and voice recognition, deployed on a robot to perform tasks with robust accuracy. Achieved 2nd runner-up at the DSTA TIL AI Competition.",
+    "technologies": [
+      "Python",
+      "PyTorch",
+      "OpenCV"
+    ],
+    "link": "https://github.com/mandychew/DSTA-TIL",
+    "role": "Team Member",
+    "duration": "May 2022 - Jun 2022"
+  },
+  {
+    "name": "HiMCM 2022 — Temperature and CO₂ Modelling",
+    "description": "Modelled the global relationship between temperature and CO₂ using regression, time-series, and grey model analysis. Implemented the modelling pipeline in PyTorch and statistically compared the effectiveness of each approach. Earned a Merit Award in the High School Mathematical Contest in Modeling (HiMCM) 2022.",
+    "technologies": [
+      "Python",
+      "PyTorch"
+    ],
+    "role": "Team Member",
+    "duration": "Oct 2022 - Nov 2022"
   }
 ]
