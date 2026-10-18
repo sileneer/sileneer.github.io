@@ -161,3 +161,20 @@ describe('CV-specific optional fields', () => {
     expect(screen.getAllByText('JavaScript')).toHaveLength(1);
   });
 });
+
+
+test('organization context and official links stay separate from personal responsibilities', () => {
+  const experience = [{ ...minimalResume.experience[0], website: 'https://organization.example.org/',
+    organizationSummary: 'A student robotics community.', logo: '/companies/parent.png' }];
+  const { rerender } = render(<ResumePage data={{ resume: { ...minimalResume, experience } }} />);
+  const link = screen.getByRole('link', { name: /X Co — organization information/ });
+  expect(link).toHaveAttribute('href', 'https://organization.example.org/');
+  expect(link).toHaveAttribute('target', '_blank');
+  expect(link).toHaveAttribute('rel', 'noopener noreferrer');
+  expect(screen.getByText('A student robotics community.')).toBeInTheDocument();
+  expect(screen.getByText('Built things.')).toBeInTheDocument();
+  expect(screen.getByRole('img', { name: 'X Co logo' })).toBeInTheDocument();
+  rerender(<ResumePage data={{ resume: minimalResume }} />);
+  expect(screen.queryByRole('link', { name: /X Co/ })).not.toBeInTheDocument();
+  expect(screen.getByText('X Co')).toBeInTheDocument();
+});

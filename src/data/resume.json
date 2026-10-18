@@ -18,7 +18,8 @@
         "Collaborated cross-team within Arm's engineering workflows, leveraging CI/CD pipelines and standard testing tools to validate firmware reliability"
       ],
       "type": "Full-time Internship",
-      "logo": "/companies/arm.svg"
+      "logo": "/companies/arm.svg",
+      "website": "https://www.arm.com/"
     },
     {
       "company": "Minimax Labs Ltd.",
@@ -38,14 +39,18 @@
         "Deepened software architecture knowledge through OOP patterns, dependency management, and UI/UX principles"
       ],
       "type": "Full-time Internship",
-      "logo": "/companies/minimax-labs.svg"
+      "logo": "/companies/minimax-labs.svg",
+      "website": "https://www.minimaxlabs.com/"
     },
     {
       "company": "Cambridge AI Builder Club (Claude Builder Club)",
       "role": "President; Claude Campus Ambassador",
       "dates": "Sept 2026 - Present",
       "location": "Cambridge, UK",
-      "description": "Lead the club and serve as Claude Campus Ambassador at the University of Cambridge."
+      "description": "Lead the club and serve as Claude Campus Ambassador at the University of Cambridge.",
+      "logo": "/companies/cambridge-ai-builder-club.png",
+      "website": "https://cambridge-ai-build-club.github.io/",
+      "organizationSummary": "Student-led Cambridge community exploring AI through hands-on workshops, project demos and hackathons."
     },
     {
       "company": "Cambridge AI Builder Club (Claude Builder Club)",
@@ -63,7 +68,10 @@
         "Designed and instructed workshops with code labs, slides, and starter repositories teaching prompt engineering, MCP, Skills, Claude API integration, tool use/function calling, RAG, evaluation, and safety/guardrails",
         "Led hackathon technical leadership: produced scaffolds and baseline projects, set up API access and rate-limit strategies, mentored teams on-site, and coordinated judging criteria",
         "Built LLM demo apps and templates in Python and React/Vue with deep Claude integration"
-      ]
+      ],
+      "logo": "/companies/cambridge-ai-builder-club.png",
+      "website": "https://cambridge-ai-build-club.github.io/",
+      "organizationSummary": "Student-led Cambridge community exploring AI through hands-on workshops, project demos and hackathons."
     },
     {
       "company": "Cambridge University Robotics Society",
@@ -81,7 +89,10 @@
       "achievements": [
         "Implemented hand gesture and pose detection using Python, MediaPipe, and OpenCV, linked to LLM modules for natural interaction and command interpretation",
         "Developed embedded control in C++ and Arduino for real-time gesture-based robot movement"
-      ]
+      ],
+      "logo": "/companies/cambridge-robotics.svg",
+      "website": "https://unibots.uk/about",
+      "organizationSummary": "Student-run robotics society with practical projects and workshops; a founding society behind Unibots UK."
     },
     {
       "company": "Cambridge University Chinese Undergraduate Society",
@@ -98,7 +109,10 @@
       "achievements": [
         "Developed and maintained the Society website (https://www.cambridgeccs.org) in React and WeChat Mini Program in JavaScript, improving engagement for hundreds of members",
         "Implemented DevOps practices and managed the development workflow via Git, streamlining deployment for rapid, stable feature delivery"
-      ]
+      ],
+      "logo": "/companies/cambridge-ccs.png",
+      "website": "https://www.cambridgeccs.org/",
+      "organizationSummary": "Cambridge Chinese undergraduate society, bringing students together through cultural and community events."
     },
     {
       "company": "Full Blue Racing",
@@ -116,7 +130,10 @@
         "Designed battery system for Formula Student EV: cell modules, BMS, and charging systems enabling cell balancing, state-of-charge monitoring, and fault detection",
         "Designed PCBs for the MCU, ECU, and I²C serial bus in KiCad, enabling real-time display of the car's operating status",
         "Developed embedded C/C++ for sensor data acquisition, I²C communication, and system diagnostics on MCU and ECU"
-      ]
+      ],
+      "logo": "/companies/full-blue-racing.png",
+      "website": "https://www.fullblueracing.co.uk/",
+      "organizationSummary": "University of Cambridge Formula Student team, designing and building single-seater racing cars."
     },
     {
       "company": "Nanyang Technological University",
@@ -137,7 +154,9 @@
         "Awarded Gold for \"Data-Driven Method for Li-Ion Battery Health Monitoring\" at the Nanyang Research Programme (NRP 2022)",
         "Open-sourced the project on GitHub for reproducibility and further research"
       ],
-      "type": "Internship"
+      "type": "Internship",
+      "logo": "/companies/ntu.png",
+      "website": "https://www.ntu.edu.sg/"
     },
     {
       "company": "Hwa Chong Infocomm and Robotics Society",
@@ -153,7 +172,10 @@
         "Trained society members on deep learning with TensorFlow, focusing on time-series analysis and NLP applications",
         "Organised academic workshops and outreach programmes to promote AI and robotics",
         "Maintained and managed Linux servers for the society's projects and members"
-      ]
+      ],
+      "logo": "/companies/hcirs.jpg",
+      "website": "https://www.linkedin.com/company/hcirs/",
+      "organizationSummary": "Student society for competitive programming, cybersecurity, web/app development, robotics and machine learning."
     }
   ],
   "education": [
