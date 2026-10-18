@@ -2,10 +2,13 @@ import React, { useMemo } from 'react';
 import { Container, Typography, Box, Button, Avatar, Grid, Card, useTheme, Stack } from '@mui/material';
 import { alpha } from '@mui/material/styles';
 import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion';
-import { Briefcase, FolderOpen, Lightbulb } from 'lucide';
+import { Briefcase, FolderOpen, Lightbulb, Sparkles } from 'lucide';
 import { Github, Linkedin } from '../brandIcons';
 import AppIcon from '../AppIcon';
+import ResearchPreview from '../ResearchPreview';
+import { PageEyebrow } from '../PageIntro';
 import { yearsOfExperience } from '../../utils/experience';
+import { resolveAsset } from '../../utils/assets';
 
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -31,16 +34,7 @@ const HomePage = ({ data }) => {
   const linkedin = personalInfo?.linkedin ?? '';
   const github = personalInfo?.github ?? '';
   const rawPhoto = personalInfo?.photo ?? '';
-  // Resolve absolute "/profile_photo.jpg" against Vite BASE_URL so the demo
-  // at /awesome-portfolio-page-react/ doesn't accidentally load the
-  // super-domain's https://sileneer.github.io/profile_photo.jpg when this
-  // template is reused as a sub-path demo. For root deployments BASE_URL="/",
-  // this is a no-op ("/profile_photo.jpg").
-  const photo = rawPhoto
-    ? rawPhoto.startsWith('/')
-      ? `${import.meta.env.BASE_URL}${rawPhoto.slice(1)}`
-      : rawPhoto
-    : '';
+  const photo = resolveAsset(rawPhoto || '/profile_photo.jpg');
 
   const yearsExperience = useMemo(() => yearsOfExperience(data?.resume?.experience), [data?.resume?.experience]);
   const skillsCount = Array.isArray(data?.resume?.skills) ? data.resume.skills.length : 0;
@@ -112,20 +106,21 @@ const HomePage = ({ data }) => {
     <Box sx={{ pb: 8 }}>
       <Box sx={{
         minHeight: '100dvh',
+        overflowX: 'clip',
         display: 'flex',
         alignItems: 'center',
         position: 'relative',
         pt: { xs: 8, md: 0 },
       }}>
         <Container maxWidth="lg">
-          <Grid container spacing={{ xs: 6, md: 8 }} alignItems="center">
+          <Grid container spacing={{ xs: 6, md: 8 }} sx={{ alignItems: 'center' }}>
 
             <Grid size={{ xs: 12, md: 7 }}>
               <Box component={motion.div} variants={containerVariants} initial="hidden" animate="visible" sx={{ textAlign: { xs: 'center', md: 'left' } }}>
                 <motion.div variants={textVariants}>
-                  <Typography variant="h6" component="p" color="primary.main" sx={{ mb: 2, textTransform: 'uppercase', letterSpacing: 3, fontWeight: 700 }}>
-                    Welcome to my universe
-                  </Typography>
+                  <Box sx={{ display: 'flex', justifyContent: { xs: 'center', md: 'flex-start' } }}>
+                    <PageEyebrow icon={Sparkles}>Hello & welcome</PageEyebrow>
+                  </Box>
                 </motion.div>
 
                 <motion.div variants={textVariants}>
@@ -145,7 +140,7 @@ const HomePage = ({ data }) => {
                 </motion.div>
 
                 <motion.div variants={textVariants}>
-                  <Typography variant="h6" color="text.secondary" paragraph sx={{ fontWeight: 400, fontSize: '1.2rem', mb: 6, maxWidth: 650, lineHeight: 1.8 }}>
+                  <Typography variant="h6" component="p" color="text.secondary" sx={{ fontWeight: 400, fontSize: '1.2rem', mb: 6, maxWidth: 650, lineHeight: 1.8 }}>
                     {bio}
                   </Typography>
                 </motion.div>
@@ -267,7 +262,7 @@ const HomePage = ({ data }) => {
       </Box>
 
       <Container maxWidth="lg" sx={{ mt: { xs: -4, md: -8 }, position: 'relative', zIndex: 10 }}>
-        <Grid container spacing={3} alignItems="stretch">
+        <Grid container spacing={3} sx={{ alignItems: 'stretch' }}>
           {stats.map((stat, i) => {
             const IconComponent = stat.icon;
             return (
@@ -360,6 +355,7 @@ const HomePage = ({ data }) => {
           })}
         </Grid>
       </Container>
+      <ResearchPreview research={data?.research} path={data?.navigation?.menuItems?.find((item) => item.component === 'ResearchPage')?.path} />
     </Box>
   );
 };

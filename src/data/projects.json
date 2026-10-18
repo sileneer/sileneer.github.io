@@ -37,7 +37,8 @@
       "Raspberry Pi"
     ],
     "role": "Developer",
-    "duration": "Jun 2023 - Sept 2023"
+    "duration": "Jun 2023 - Sept 2023",
+    "dates": "Jun 2023 - Sept 2023"
   },
   {
     "name": "DSTA Today-I-Learned (TIL) AI Hackathon",
@@ -49,7 +50,8 @@
     ],
     "link": "https://github.com/mandychew/DSTA-TIL",
     "role": "Team Member",
-    "duration": "May 2022 - Jun 2022"
+    "duration": "May 2022 - Jun 2022",
+    "dates": "May 2022 - Jun 2022"
   },
   {
     "name": "HiMCM 2022 — Temperature and CO₂ Modelling",
@@ -59,6 +61,7 @@
       "PyTorch"
     ],
     "role": "Team Member",
-    "duration": "Oct 2022 - Nov 2022"
+    "duration": "Oct 2022 - Nov 2022",
+    "dates": "Oct 2022 - Nov 2022"
   }
 ]

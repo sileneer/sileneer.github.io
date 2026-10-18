@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import {
   Download,
   Briefcase,
+  Building2,
   GraduationCap,
   Code,
   Award,
@@ -18,7 +19,9 @@ import {
 import AppIcon from '../AppIcon';
 import SectionHeading from '../SectionHeading';
 import StatItem from '../StatItem';
+import PageIntro from '../PageIntro';
 import { yearsOfExperience } from '../../utils/experience';
+import { resolveAsset } from '../../utils/assets';
 
 // Shared entrance choreography: one stagger container reveals its children in
 // sequence (30–60ms apart) instead of every element animating independently.
@@ -167,6 +170,21 @@ const badgeChipSx = (theme) => ({
   },
 });
 
+// Keep a stable tile when an optional logo fails; a new source can load again.
+const CompanyLogo = ({ source, company }) => {
+  const [failedSource, setFailedSource] = useState(null);
+  const url = resolveAsset(source);
+  return (
+    <Box sx={{ width: 48, height: 48, flexShrink: 0, border: 1, borderColor: 'divider', borderRadius: 2,
+      overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: 'action.hover', color: 'primary.main' }}>
+      {failedSource === url ? <AppIcon icon={Building2} size={24} /> : (
+        <Box component="img" src={url} alt={`${company} logo`} width={48} height={48} loading="lazy" decoding="async"
+          onError={() => setFailedSource(url)} sx={{ width: '100%', height: '100%', objectFit: 'contain', p: 0.75, bgcolor: '#fff' }} />
+      )}
+    </Box>
+  );
+};
+
 // Single-rail timeline: one vertical rail on the left with full-width cards, so
 // the eye reads straight down instead of zig-zagging across the row.
 const ExperienceTimeline = ({ experience }) => {
@@ -220,16 +238,20 @@ const ExperienceTimeline = ({ experience }) => {
               <CardContent sx={{ p: { xs: 3, md: 4 } }}>
                 <Stack
                   direction={{ xs: 'column', sm: 'row' }}
-                  justifyContent="space-between"
-                  alignItems={{ sm: 'flex-start' }}
                   spacing={1}
-                  sx={{ mb: 1 }}
+                  sx={{ mb: 1, justifyContent: 'space-between', alignItems: { sm: 'flex-start' } }}
                 >
-                  <Box>
-                    <Typography variant="h5" component="h3" color="primary.main" fontWeight={700}>{exp.role}</Typography>
-                    <Typography variant="subtitle1" component="p" fontWeight={600}>{exp.company}</Typography>
+                  <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 2, minWidth: 0 }}>
+                    {exp.logo && <CompanyLogo source={exp.logo} company={exp.company} />}
+                    <Box sx={{ minWidth: 0, overflowWrap: 'anywhere' }}>
+                      <Typography variant="h5" component="h3" color="primary.main" fontWeight={700}>{exp.role}</Typography>
+                      <Typography variant="subtitle1" component="p" fontWeight={600}>{exp.company}</Typography>
+                    </Box>
                   </Box>
-                  {exp.dates && <Chip label={exp.dates} size="small" sx={{ flexShrink: 0 }} />}
+                  <Stack direction="row" useFlexGap sx={{ flexWrap: 'wrap', gap: 1 }}>
+                    {exp.type && <Chip label={exp.type} size="small" color="secondary" variant="outlined" />}
+                    {exp.dates && <Chip label={exp.dates} size="small" sx={{ flexShrink: 0 }} />}
+                  </Stack>
                 </Stack>
                 {exp.location && (
                   <Stack direction="row" spacing={0.5} alignItems="center" sx={{ color: 'text.secondary', mb: 2 }}>
@@ -284,7 +306,7 @@ const EducationCard = ({ edu }) => {
         {subtitle && <Typography variant="subtitle1" component="p" fontWeight={600} mb={2}>{subtitle}</Typography>}
         <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap" sx={{ mb: 2 }}>
           {edu?.dates && <Chip label={edu.dates} size="small" />}
-          {edu?.gpa && <Chip label={`GPA: ${edu.gpa}`} size="small" color="secondary" variant="outlined" />}
+          {(edu?.grade || edu?.gpa) && <Chip label={edu.grade ? `Grade: ${edu.grade}` : `GPA: ${edu.gpa}`} size="small" color="secondary" variant="outlined" />}
         </Stack>
         {edu?.description && (
           <Typography variant="body2" color="text.secondary" mb={2}>{edu.description}</Typography>
@@ -357,6 +379,7 @@ const ResumePage = ({ data }) => {
   const experience = useMemo(() => (Array.isArray(resume?.experience) ? resume.experience : []), [resume?.experience]);
   const education = Array.isArray(resume?.education) ? resume.education : [];
   const skills = Array.isArray(resume?.skills) ? resume.skills : [];
+  const skillCategories = Array.isArray(resume?.skillCategories) ? resume.skillCategories : [];
   const certifications = Array.isArray(resume?.certifications) ? resume.certifications : [];
   const awards = Array.isArray(resume?.awards) ? resume.awards : [];
   const interests = Array.isArray(resume?.interests) ? resume.interests : [];
@@ -393,69 +416,43 @@ const ResumePage = ({ data }) => {
     <Box sx={{ minHeight: '100dvh', pt: { xs: 10, md: 12 }, pb: 8 }}>
       <Container maxWidth="lg">
 
-        {/* Intro band */}
-        <Box
-          component={motion.div}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          sx={{ mb: { xs: 6, md: 9 } }}
-        >
-          <Box sx={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: { sm: 'center' },
-            flexDirection: { xs: 'column', sm: 'row' },
-            gap: 3,
-            mb: summary || stats.length ? 3 : 0,
-          }}>
-            <Typography variant="h2" component="h1" sx={{
-              fontSize: { xs: '2.5rem', md: '3.5rem' }, fontWeight: 800,
-              background: `linear-gradient(135deg, ${theme.palette.text.primary} 0%, ${theme.palette.primary.main} 100%)`,
-              WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
-            }}>
-              Résumé
-            </Typography>
-            {resume.cvDownload && (
-              <Button
-                variant="contained"
-                startIcon={<AppIcon icon={Download} size={20} />}
-                href={resume.cvDownload}
-                download
-                aria-label="Download CV as PDF"
-                sx={{
-                  flexShrink: 0,
-                  background: `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
-                  color: theme.palette.getContrastText(theme.palette.primary.main),
-                  px: 4, py: 1.5,
-                }}
-              >
-                Download CV
-              </Button>
-            )}
-          </Box>
-
-          {summary && (
-            <Typography variant="h6" component="p" sx={{ fontWeight: 400, color: 'text.secondary', lineHeight: 1.8, maxWidth: '65ch' }}>
-              {summary}
-            </Typography>
-          )}
-
+        <PageIntro icon={Briefcase} eyebrow="Experience & skills" title="Résumé" description={summary}
+          action={(() => {
+              const rawCv = resume?.cvDownload ?? '';
+              if (!rawCv) return null;
+              const cvHref = resolveAsset(rawCv);
+              return (
+                <Button
+                  variant="contained"
+                  startIcon={<AppIcon icon={Download} size={20} />}
+                  href={cvHref}
+                  download
+                  aria-label="Download CV as PDF"
+                  sx={{
+                    flexShrink: 0,
+                    background: `linear-gradient(45deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
+                    color: theme.palette.getContrastText(theme.palette.primary.main),
+                    px: 4, py: 1.5,
+                  }}
+                >
+                  Download CV
+                </Button>
+              );
+            })()}>
           {stats.length > 0 && (
             <Stack
               direction="row"
               spacing={{ xs: 3, md: 5 }}
               useFlexGap
-              flexWrap="wrap"
               divider={<Divider orientation="vertical" flexItem />}
-              sx={{ mt: 4 }}
+              sx={{ mt: 4, flexWrap: 'wrap' }}
             >
               {stats.map((stat, i) => (
                 <StatItem key={i} value={stat.value} label={stat.label} />
               ))}
             </Stack>
           )}
-        </Box>
+        </PageIntro>
 
         {/* Sticky section nav + content */}
         <Box sx={{ display: 'flex', gap: { md: 6 }, alignItems: 'flex-start' }}>
@@ -502,11 +499,22 @@ const ResumePage = ({ data }) => {
 
             {skills.length > 0 && (
               <Section id="skills" icon={Code} title="Technical Arsenal">
-                <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1.25 }}>
-                  {skills.map((skill, index) => (
-                    <Chip key={index} label={skill} sx={badgeChipSx(theme)} />
-                  ))}
-                </Box>
+                {skillCategories.length > 0 ? (
+                  <Stack spacing={3}>
+                    {skillCategories.map(({ category, items }) => (
+                      <Box key={category}>
+                        <Typography variant="h6" component="h3" sx={{ mb: 1.5 }}>{category}</Typography>
+                        <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1.25 }}>
+                          {items.map((skill) => <Chip key={skill} label={skill} sx={badgeChipSx(theme)} />)}
+                        </Box>
+                      </Box>
+                    ))}
+                  </Stack>
+                ) : (
+                  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1.25 }}>
+                    {skills.map((skill, index) => <Chip key={index} label={skill} sx={badgeChipSx(theme)} />)}
+                  </Box>
+                )}
               </Section>
             )}
 

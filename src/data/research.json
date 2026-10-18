@@ -1,0 +1,74 @@
+{
+  "introduction": {
+    "statement": "Research in federated learning, trustworthy language models, and LLM inference acceleration.",
+    "areas": [
+      "Federated Learning",
+      "Trustworthy LLMs",
+      "LLM Inference Acceleration"
+    ],
+    "collaboration": false
+  },
+  "featuredWork": {
+    "kind": "publication",
+    "id": "byzantine-resilient-federated-llm"
+  },
+  "publications": [
+    {
+      "id": "byzantine-resilient-federated-llm",
+      "title": "Byzantine-Resilient Federated Large Language Model via Hypergraph Message Passing",
+      "authors": [
+        {
+          "name": "Kai Li"
+        },
+        {
+          "name": "Hanlin Cai"
+        },
+        {
+          "name": "Zihao Liu",
+          "isOwner": true
+        },
+        {
+          "name": "Yichen Li"
+        },
+        {
+          "name": "Jose Alcaraz Calero"
+        },
+        {
+          "name": "Wei Ni"
+        },
+        {
+          "name": "Falko Dressler"
+        },
+        {
+          "name": "Özgür B. Akan"
+        }
+      ],
+      "year": 2026,
+      "venue": "IEEE Transactions on Information Forensics and Security",
+      "type": "journal",
+      "status": "under-review",
+      "summary": "Developed a hypergraph message-passing framework to detect and suppress malicious model updates in federated LLM training while preserving knowledge alignment across clients.",
+      "topics": [
+        "Federated Learning",
+        "LLMs",
+        "Byzantine Resilience",
+        "Hypergraph Message Passing"
+      ],
+      "links": {
+        "paper": "https://arxiv.org/abs/2610.12711",
+        "pdf": "https://arxiv.org/pdf/2610.12711"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "llm-inference-accelerators",
+      "title": "LLM Inference Accelerators",
+      "summary": "Research on LLM inference accelerators, currently in progress.",
+      "status": "ongoing",
+      "topics": [
+        "LLM Inference Acceleration"
+      ]
+    }
+  ]
+}
