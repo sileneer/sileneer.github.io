@@ -1,5 +1,5 @@
 {
-  "summary": "Year 3 Engineering student at the University of Cambridge, specialising in Information and Computer Engineering, with hands-on experience in low-level firmware engineering at Arm, full-stack development, machine learning research, and agentic AI systems. Skilled in C/C++, Java, Python, and TypeScript, with expertise spanning secure boot firmware, scalable web applications, predictive ML models, and LLM harness workflows including RAG, MCP, and context engineering.",
+  "summary": "Year 3 Engineering student at the University of Cambridge, specialising in Information and Computer Engineering. Experience in secure boot firmware at Arm, full-stack development, agentic AI systems, and federated learning research. President of Cambridge AI Builder Club and Claude Campus Ambassador at the University of Cambridge.",
   "experience": [
     {
       "company": "Arm",
@@ -7,39 +7,62 @@
       "dates": "Jun 2026 - Present",
       "location": "Cambridge, UK",
       "description": "Kernel, security, and isolation layer development for Arm's next-generation CPU platform, working on low-level C firmware and secure boot engineering.",
-      "technologies": ["C", "CI/CD"],
+      "technologies": [
+        "C",
+        "CI/CD"
+      ],
       "achievements": [
         "Developed kernel, security, and isolation layer firmware in C performing CPU integrity verification at power-on and establishing hardware-backed security layers prior to OS handoff",
         "Engineered secure bootloader: cryptographically verify Linux image integrity and detect unauthorised modifications, safeguarding the trusted boot chain from power-on to Linux launch",
         "Profiled and refined performance-critical code paths, substantially improving runtime efficiency across the pre-boot software stack",
         "Collaborated cross-team within Arm's engineering workflows, leveraging CI/CD pipelines and standard testing tools to validate firmware reliability"
-      ]
+      ],
+      "type": "Full-time Internship",
+      "logo": "/companies/arm.svg"
     },
     {
       "company": "Minimax Labs Ltd.",
       "role": "Software Engineer",
       "dates": "Jun 2025 - Sept 2025",
       "location": "London, UK",
-      "description": "Developed frontend features and improved system reliability for large-scale optimisation and data management platforms, including LiNGO (LNG portfolio and logistics optimisation) and DataHub (database system for optimisation algorithms).",
-      "technologies": ["TypeScript", "Angular", "Java", "REST APIs", "Git"],
+      "description": "Developed frontend features and improved system reliability for large-scale optimisation and data management platforms.",
+      "technologies": [
+        "TypeScript",
+        "Angular",
+        "Java",
+        "REST APIs",
+        "Git"
+      ],
       "achievements": [
         "Built reusable UI components in TypeScript and Angular, integrated with Java backends through RESTful APIs",
-        "Enhanced usability and maintainability through reusable components, automated saving mechanisms, and system update features",
-        "Deepened software architecture knowledge through OOP patterns, dependency management, and UI/UX principles",
-        "Applied Git workflows and collaborated with senior engineers in both in-person and remote settings"
-      ]
+        "Deepened software architecture knowledge through OOP patterns, dependency management, and UI/UX principles"
+      ],
+      "type": "Full-time Internship",
+      "logo": "/companies/minimax-labs.svg"
+    },
+    {
+      "company": "Cambridge AI Builder Club (Claude Builder Club)",
+      "role": "President; Claude Campus Ambassador",
+      "dates": "Sept 2026 - Present",
+      "location": "Cambridge, UK",
+      "description": "Lead the club and serve as Claude Campus Ambassador at the University of Cambridge."
     },
     {
       "company": "Cambridge AI Builder Club (Claude Builder Club)",
       "role": "Technical Officer",
       "dates": "Oct 2025 - June 2026",
       "location": "Cambridge, UK",
-      "description": "University partnership with Anthropic: ran demos, workshops, and hackathons showcasing innovative AI projects from the community.",
-      "technologies": ["Python", "React", "Vue", "Claude API"],
+      "description": "Designed and instructed workshops, led hackathon technical delivery, and built LLM demos for the club.",
+      "technologies": [
+        "Python",
+        "React",
+        "Vue",
+        "Claude API"
+      ],
       "achievements": [
         "Designed and instructed workshops with code labs, slides, and starter repositories teaching prompt engineering, MCP, Skills, Claude API integration, tool use/function calling, RAG, evaluation, and safety/guardrails",
         "Led hackathon technical leadership: produced scaffolds and baseline projects, set up API access and rate-limit strategies, mentored teams on-site, and coordinated judging criteria",
-        "Built LLM demo apps and templates in Python and React/Vue with deep Claude integration, featuring streaming UIs and retrieval with vector search"
+        "Built LLM demo apps and templates in Python and React/Vue with deep Claude integration"
       ]
     },
     {
@@ -48,11 +71,16 @@
       "dates": "Oct 2025 - June 2026",
       "location": "Cambridge, UK",
       "description": "Developed control and perception systems for a humanoid robot based on InMoov, integrating computer vision and LLM modules for natural interaction.",
-      "technologies": ["Python", "C++", "Arduino", "OpenCV", "MediaPipe"],
+      "technologies": [
+        "Python",
+        "C++",
+        "Arduino",
+        "OpenCV",
+        "MediaPipe"
+      ],
       "achievements": [
         "Implemented hand gesture and pose detection using Python, MediaPipe, and OpenCV, linked to LLM modules for natural interaction and command interpretation",
-        "Developed embedded control in C++ and Arduino for real-time gesture-based robot movement",
-        "Built autonomous navigation features using SLAM for spatial awareness and mobility"
+        "Developed embedded control in C++ and Arduino for real-time gesture-based robot movement"
       ]
     },
     {
@@ -61,12 +89,15 @@
       "dates": "Oct 2024 - June 2026",
       "location": "Cambridge, UK",
       "description": "Developed and maintained the Society's website (React) and WeChat Mini Program (JavaScript), improving engagement for hundreds of members.",
-      "technologies": ["React", "JavaScript", "Git", "DevOps"],
+      "technologies": [
+        "React",
+        "JavaScript",
+        "Git",
+        "DevOps"
+      ],
       "achievements": [
         "Developed and maintained the Society website (https://www.cambridgeccs.org) in React and WeChat Mini Program in JavaScript, improving engagement for hundreds of members",
-        "Implemented DevOps practices and managed the development workflow via Git, streamlining deployment for rapid, stable feature delivery",
-        "Maintained backend database ensuring data integrity, reliability, and scalability; monitored system performance, detected anomalies, and supported incident response",
-        "Collected and analysed user feedback to prioritise enhancements and provided technical support for events"
+        "Implemented DevOps practices and managed the development workflow via Git, streamlining deployment for rapid, stable feature delivery"
       ]
     },
     {
@@ -75,7 +106,12 @@
       "dates": "Oct 2024 - June 2026",
       "location": "Cambridge, UK",
       "description": "Battery system design and specification for a Formula Student electric race car, including cell modules, BMS, and charging systems.",
-      "technologies": ["C", "C++", "KiCad", "Arduino"],
+      "technologies": [
+        "C",
+        "C++",
+        "KiCad",
+        "Arduino"
+      ],
       "achievements": [
         "Designed battery system for Formula Student EV: cell modules, BMS, and charging systems enabling cell balancing, state-of-charge monitoring, and fault detection",
         "Designed PCBs for the MCU, ECU, and I²C serial bus in KiCad, enabling real-time display of the car's operating status",
@@ -88,13 +124,20 @@
       "dates": "Apr 2022 - March 2023",
       "location": "Singapore",
       "description": "Developed an LSTM/GRU framework for Li-ion battery health prediction, achieving an average RMSE of 0.724% on real battery datasets. Supervised by Prof. Yan Xu, School of EEE, NTU.",
-      "technologies": ["Python", "PyTorch", "NumPy", "Pandas", "Matplotlib"],
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "NumPy",
+        "Pandas",
+        "Matplotlib"
+      ],
       "achievements": [
         "Designed and implemented an LSTM/GRU framework to predict battery State-of-Health, addressing limitations of previous methods (high complexity, low interpretability, high training cost)",
         "Achieved an average RMSE of 0.724% on real battery datasets, developed and validated in PyTorch",
         "Awarded Gold for \"Data-Driven Method for Li-Ion Battery Health Monitoring\" at the Nanyang Research Programme (NRP 2022)",
         "Open-sourced the project on GitHub for reproducibility and further research"
-      ]
+      ],
+      "type": "Internship"
     },
     {
       "company": "Hwa Chong Infocomm and Robotics Society",
@@ -102,7 +145,10 @@
       "dates": "Feb 2022 - Aug 2023",
       "location": "Singapore",
       "description": "Provided training to society members on deep learning with TensorFlow, focusing on time-series analysis and NLP applications.",
-      "technologies": ["TensorFlow", "Linux"],
+      "technologies": [
+        "TensorFlow",
+        "Linux"
+      ],
       "achievements": [
         "Trained society members on deep learning with TensorFlow, focusing on time-series analysis and NLP applications",
         "Organised academic workshops and outreach programmes to promote AI and robotics",
@@ -115,11 +161,10 @@
       "degree": "BA (Hons) and MEng in Engineering (Year 3)",
       "institution": "University of Cambridge",
       "dates": "Oct 2024 - Sept 2028",
-      "gpa": "II.1",
       "location": "Cambridge, UK",
       "description": "Engineering Area: Information and Computer Engineering",
       "coursework": [
-        "3F8 Inference (regression, classification, PCA, hidden Markov models)",
+        "3F8 Inference (regression, classification, PCA, hidden Markov models, gradient-based optimisation)",
         "3F3 Statistical Signal Processing (maximum-likelihood and Bayesian estimation, Wiener and matched filters)",
         "3M1 Mathematical Methods (SVD, least squares, Markov chains, constrained optimisation)",
         "3F7 Information Theory and Coding (entropy, source coding, error-correcting codes)",
@@ -127,11 +172,13 @@
         "4M21 Software Engineering and Design (OOP, UML, design patterns, agile, HCI)"
       ],
       "extracurriculars": [
-        "Electronics Engineer at Full Blue Racing",
-        "DevOps Engineer at Cambridge University Chinese Undergraduate Society",
-        "Software Engineer at Cambridge University Robotics Society",
-        "Technical Officer at Cambridge AI Builder Club"
-      ]
+        "President of Cambridge AI Builder Club; Claude Campus Ambassador at the University of Cambridge (Sept 2026 - Present)",
+        "Technical Officer at Cambridge AI Builder Club (Oct 2025 - June 2026)",
+        "Electronics Engineer at Full Blue Racing (Oct 2024 - June 2026)",
+        "DevOps Engineer; IT Department Coordinator at Cambridge University Chinese Undergraduate Society (Oct 2024 - June 2026)",
+        "Software Engineer at Cambridge University Robotics Society (Oct 2025 - June 2026)"
+      ],
+      "grade": "II.1"
     },
     {
       "degree": "EE111B – Electrical & Computer Engineering Principles and Practice",
@@ -209,7 +256,12 @@
     "LLM Evals",
     "Guardrails",
     "Claude Code",
-    "Codex"
+    "Codex",
+    "Agent Harnesses",
+    "Structured Memory",
+    "LLM Inference Accelerators",
+    "LoRA-based Federated Learning",
+    "Hallucination Mitigation and Defence"
   ],
   "awards": [
     {
@@ -226,5 +278,78 @@
     "Open Source",
     "Data-driven Research"
   ],
-  "cvDownload": "/CV.pdf"
+  "cvDownload": "/CV.pdf",
+  "skillCategories": [
+    {
+      "category": "Software Development",
+      "items": [
+        "C",
+        "C++",
+        "Java",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "Dart",
+        "Kotlin",
+        "Git",
+        "Linux",
+        "Angular",
+        "Flutter",
+        "Node.js",
+        "Spring Boot",
+        "AWS"
+      ]
+    },
+    {
+      "category": "Machine Learning & Data Science",
+      "items": [
+        "NumPy",
+        "Pandas",
+        "Matplotlib",
+        "SciPy",
+        "Scikit-learn",
+        "PyTorch",
+        "TensorFlow"
+      ]
+    },
+    {
+      "category": "Hardware & Engineering Tools",
+      "items": [
+        "Arduino",
+        "SolidWorks",
+        "KiCad",
+        "LTSpice",
+        "PicoScope"
+      ]
+    },
+    {
+      "category": "Practices",
+      "items": [
+        "Agile",
+        "Scrum",
+        "OOP",
+        "MVC and Design Patterns",
+        "DevOps",
+        "CI/CD"
+      ]
+    },
+    {
+      "category": "AI & LLM Systems",
+      "items": [
+        "RAG",
+        "MCP",
+        "Agent Skills",
+        "Context Engineering",
+        "LLM Evals",
+        "Guardrails",
+        "Claude Code",
+        "Codex",
+        "Agent Harnesses",
+        "Structured Memory",
+        "LLM Inference Accelerators",
+        "LoRA-based Federated Learning",
+        "Hallucination Mitigation and Defence"
+      ]
+    }
+  ]
 }
