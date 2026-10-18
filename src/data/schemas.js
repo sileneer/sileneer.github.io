@@ -52,6 +52,8 @@ const pdfPath = localAssetPath('pdf');
 const experienceItemSchema = z.object({
   company: z.string().min(1),
   logo: z.union([httpUrl, imagePath]).optional(),
+  website: httpUrl.optional(),
+  organizationSummary: z.string().trim().min(1).max(240).optional(),
   role: z.string().min(1),
   dates: z.string().min(1),
   description: z.string().min(1),

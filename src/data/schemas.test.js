@@ -88,3 +88,10 @@ test.each([undefined, '/companies/acme.svg', '/companies/acme.png', 'https://cdn
 test.each(['', 'javascript:alert(1)', '//cdn.example.org/logo.svg', '/../logo.svg', '/companies/%2e%2e/logo.svg', '/companies/logo.pdf'])('rejects invalid company logo %s', (logo) => {
   expect(resumeSchema.safeParse(experienceWithLogo(logo)).success).toBe(false);
 });
+
+
+test.each(['javascript:alert(1)', 'data:text/html,test', '//example.org/'])('rejects unsafe organization link %s', (website) => {
+  const resume = experienceWithLogo('/companies/acme.svg');
+  resume.experience[0].website = website;
+  expect(resumeSchema.safeParse(resume).success).toBe(false);
+});
