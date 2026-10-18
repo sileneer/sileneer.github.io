@@ -99,6 +99,8 @@ Contains your professional background, skills, and qualifications.
 - `experience` (array of objects): Work experience entries
   - `company` (string): Company name
   - `logo` (string, optional): Company logo image path (e.g., `/companies/acme.svg`) or an HTTP(S) image URL; omit when unavailable
+  - `website` (HTTP(S) URL, optional): Official organization website or authoritative profile; links the organization name
+  - `organizationSummary` (string, optional, up to 240 characters): Sourced organization context, separate from personal responsibilities
   - `role` (string): Job title/role
   - `dates` (string): Employment period (e.g., "2023 - Present")
   - `type` (string, optional): Employment type (e.g., "Full-time", "Part-time", "Internship")

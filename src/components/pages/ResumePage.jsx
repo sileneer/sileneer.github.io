@@ -245,7 +245,19 @@ const ExperienceTimeline = ({ experience }) => {
                     {exp.logo && <CompanyLogo source={exp.logo} company={exp.company} />}
                     <Box sx={{ minWidth: 0, overflowWrap: 'anywhere' }}>
                       <Typography variant="h5" component="h3" color="primary.main" fontWeight={700}>{exp.role}</Typography>
-                      <Typography variant="subtitle1" component="p" fontWeight={600}>{exp.company}</Typography>
+                      <Typography variant="subtitle1" component="p" fontWeight={600}>
+                        {exp.website ? (
+                          <Link href={exp.website} target="_blank" rel="noopener noreferrer" underline="hover"
+                            aria-label={`${exp.company} — organization information (opens in a new tab)`}>
+                            {exp.company}
+                          </Link>
+                        ) : exp.company}
+                      </Typography>
+                      {exp.organizationSummary && (
+                        <Typography variant="body2" color="text.secondary" sx={{ mt: 0.75, maxWidth: '60ch' }}>
+                          {exp.organizationSummary}
+                        </Typography>
+                      )}
                     </Box>
                   </Box>
                   <Stack direction="row" useFlexGap sx={{ flexWrap: 'wrap', gap: 1 }}>
